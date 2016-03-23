@@ -8,13 +8,14 @@ import io
 import pandas as pd
 
 
+
 def segment_hashtag(x):
     if hasattr(x, "group"):
         x = x.group()[1:]
     else:
         x = x[1:]
     # print(x, " hashtag " + wordsegment.segment(x) + " . ")
-    return " hashtag " + " ".join(wordsegment.segment(x)) + " . "
+    return " hashtag " + " ".join(wordsegment.segment(x)) + " , "
 
 
 def ends_with_label(line):
@@ -22,12 +23,12 @@ def ends_with_label(line):
     :param line: it may be encoded in utf-8,
     :return: -1 not a full sample, 0 no label, 1 with a label
     """
-    ix = line.rfind(",")
+    ix = line.rfind(u",")
     if ix < 0:
         return -1
     if ix + 1 >= len(line):
         return 0
-    if line[ix + 1].isupper() and " " not in line[ix + 1:]:
+    if line[ix + 1].isupper() and u" " not in line[ix + 1:]:
         if ix + 2 < len(line) and line[ix + 2:].islower():
             return 1
     return 0
@@ -37,28 +38,25 @@ def fix_csv(path, k):
     """concatenate the lines without labels to one with a label"""
     with io.open(path, "r", encoding="utf-8-sig") as csv, io.open(path[0:path.rfind(".")] + "_fixed.csv", "w",
                                                                   encoding="utf-8-sig") as fixed_csv:
-        fixed_line = ""
+        fixed_line = u""
         in_quote = False
         for line in csv:
-            if "\"" in line or "\'" in line:
+            if u"\"" in line or u"\'" in line:
                 j = 0
                 for k in line:
-                    if k == "\"" or k == "\'":
+                    if k == u"\"" or k == u"\'":
                         j += 1
                 if j % 2 == 1:
                     in_quote = in_quote is False  # flip the value
             if ends_with_label(line) == k and not in_quote:
                 fixed_csv.write(fixed_line + line)
-                fixed_line = ""
+                fixed_line = u""
             else:
-                fixed_line += line.strip() + " "
-
-
-
+                fixed_line += line.strip() + u" "
 
 
 def prep_tweet(tweet, segment=False):
-    """ modified from an existing code, courtesy to: http://nlp.stanford.edu/projects/glove/preprocess-twitter.rb
+    """ modified from an existing code from: http://nlp.stanford.edu/projects/glove/preprocess-twitter.rb
     :param tweet: a single word from the tweet
     :return: tagged/preprocessed version or the tweet itself
     """
@@ -135,7 +133,7 @@ with io.open("../data/unsupervised.csv", "r", encoding="utf-8-sig") as dataset:
         raw_input("dodo")
 # MAX_WORD_LENGTH = 100
 # ENGLISH_WORDS = set(words.words())
-TWITTER_WORDS = set()
+
 '''
 
 # print(segment("helloworld", ENGLISH_WORDS))
