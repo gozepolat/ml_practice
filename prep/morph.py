@@ -8,7 +8,6 @@ import io
 import pandas as pd
 
 
-
 def segment_hashtag(x):
     if hasattr(x, "group"):
         x = x.group()[1:]
@@ -55,13 +54,33 @@ def fix_csv(path, k):
                 fixed_line += line.strip() + u" "
 
 
+def fix_emoji(path, emoji):
+    lines = []
+    emoji_path = path[0:path.rfind(".")] + "_emoji.csv"
+    with io.open(path, "r", encoding="utf-8-sig") as csv, io.open(emoji_path, "w", encoding="utf-8-sig") as emoji_csv:
+        for line in csv:
+            lines.append(line.encode("utf-8-sig"))
+        # replace emojis with words
+        for i in range(len(lines)):
+            for key in emoji.keys():
+                lines[i] = lines[i].replace(key, emoji[key])
+        for line in lines:
+            emoji_csv.write(line)
+    return emoji_path
+
+
+def fix(path, k, emoji):
+    emoji_path = fix_emoji(path, emoji)
+    fix_csv(emoji_path, k)
+
+
 def prep_tweet(tweet, segment=False):
     """ modified from an existing code from: http://nlp.stanford.edu/projects/glove/preprocess-twitter.rb
     :param tweet: a single word from the tweet
     :return: tagged/preprocessed version or the tweet itself
     """
-    flags = re.VERBOSE | re.DOTALL | re.LOCALE
-    eyes = r"[8:=;]"
+    flags = re.VERBOSE | re.DOTALL | re.LOCALE | re.U
+    eyes = r"[8:=;\^]"
     nose = r"['`\-]?"
     tweet = re.sub(r",", " , ", tweet, flags)
     tweet = re.sub(r"https?:\/\/\S+\b|www\.(\w+\.)+\S*", " url ", tweet, flags)
@@ -72,17 +91,17 @@ def prep_tweet(tweet, segment=False):
     tweet = re.sub(r"{}{}\(+|\)+{}{}".format(eyes, nose, nose, eyes), " sad ", tweet, flags)
     tweet = re.sub(r"{}{}[\/|l*]".format(eyes, nose), " neutral ", tweet, flags)
     tweet = re.sub(r" x[xo]+", " kiss ", tweet, flags)
-    tweet = re.sub(r"<3", " heart ", tweet, flags)
-    tweet = re.sub(r"♡", " heart ", tweet, flags)
+    tweet = re.sub(r"<3|♡ ", " heart ", tweet, flags)
     tweet = re.sub(r"[-+]?[.\d]*[\d]+[:,.\d]*", " number ", tweet, flags)
     tweet = re.sub(r"\*([^\*]+)\*", r"\1", tweet, flags)
     tweet = re.sub(r"#", " #", tweet, flags)
-    tweet = re.sub(r"([A-Z0-9\)\(,.!?:;]+ )+", r"\1 shout ", tweet, flags)
+    tweet = re.sub(r"([A-Z^a-z]+)", r"\1 shout ", tweet, flags)
     tweet = re.sub(r"([!?.]){2,}", r"\1 repeat ", tweet, flags)
     tweet = re.sub(r"([aoe]*h[aoe]+){2,}", " laugh ", tweet, flags | re.IGNORECASE)
     tweet = re.sub(r"<+-+", " from ", tweet, flags)
     tweet = re.sub(r"-+>+", " to ", tweet, flags)
-    tweet = re.sub(r"[.]", " . ", tweet, flags)
+    tweet = re.sub(r"([.,:;!?])", " \1 ", tweet, flags)
+    tweet = re.sub(r"zz[z]+", " sleep ", tweet, flags)
     if segment:
         tweet = re.sub(r"#\S+", segment_hashtag, tweet, flags)
 
