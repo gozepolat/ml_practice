@@ -1,0 +1,3481 @@
+(dp0
+S'\xce\xa9'
+p1
+S'OM'
+p2
+sS'\xce\xa7'
+p3
+S'X'
+p4
+sS'\xe3\x8a\x99'
+p5
+S' secret '
+p6
+sS'\xce\x91'
+p7
+S'A'
+p8
+sS'\xe3\x8a\x97'
+p9
+S' congratulation '
+p10
+sS'\xe2\xac\x9c'
+p11
+S' white large square '
+p12
+sS'\xe2\xac\x9b'
+p13
+S' black large square '
+p14
+sS'\xe2\xac\x85'
+p15
+S' leftwards black arrow '
+p16
+sS'\xe2\xac\x87'
+p17
+S' down black arrow '
+p18
+sS'\xe2\xac\x86'
+p19
+S' up black arrow '
+p20
+sS'\xf0\x9f\x87\xab\xf0\x9f\x87\xb7'
+p21
+S' country fr '
+p22
+sS'\xf0\x9f\xa4\x94'
+p23
+S' thinking '
+p24
+sS'\xef\xb8\x8c'
+p25
+S''
+p26
+sS'\xef\xb8\x8d'
+p27
+g26
+sS'\xef\xb8\x8e'
+p28
+g26
+sS'\xef\xb8\x8f'
+p29
+g26
+sS'\xef\xb8\x88'
+p30
+g26
+sS'\xef\xb8\x89'
+p31
+g26
+sS'\xef\xb8\x8a'
+p32
+g26
+sS'\xef\xb8\x8b'
+p33
+g26
+sS'\xef\xb8\x84'
+p34
+g26
+sS'\xef\xb8\x85'
+p35
+g26
+sS'\xef\xb8\x86'
+p36
+g26
+sS'\xef\xb8\x87'
+p37
+g26
+sS'\xef\xb8\x80'
+p38
+g26
+sS'\xef\xb8\x81'
+p39
+g26
+sS'\xef\xb8\x82'
+p40
+g26
+sS'\xef\xb8\x83'
+p41
+g26
+sS'\xf0\x9f\x90\x8c'
+p42
+S' snail '
+p43
+sS'\xf0\x9f\x99\x88'
+p44
+S' see no evil '
+p45
+sS'\xf0\x9f\x99\x89'
+p46
+S' hear no evil '
+p47
+sS'\xf0\x9f\x99\x8a'
+p48
+S' speak no evil '
+p49
+sS'\xf0\x9f\x99\x8b'
+p50
+S' happy raising one hand '
+p51
+sS'\xf0\x9f\x99\x8c'
+p52
+S' raising hands in celebration '
+p53
+sS'\xf0\x9f\x99\x8d'
+p54
+S' frowning '
+p55
+sS'\xf0\x9f\x99\x8e'
+p56
+S' pouting '
+p57
+sS'\xf0\x9f\x99\x8f'
+p58
+S' folded hands '
+p59
+sS'\xf0\x9f\x99\x80'
+p60
+S' weary '
+p61
+sS'\xf0\x9f\x99\x83'
+p62
+S' upside down smile '
+p63
+sS'\xf0\x9f\x99\x84'
+p64
+S' rolling eyes '
+p65
+sS'\xf0\x9f\x99\x85'
+p66
+S' no good '
+p67
+sS'\xf0\x9f\x99\x86'
+p68
+S' ok '
+p69
+sS'\xf0\x9f\x99\x87'
+p70
+S' bowing deeply '
+p71
+sS'\xe2\x81\x89'
+p72
+S' ! ? mark '
+p73
+sS'\xf0\x9f\x80\x84'
+p74
+S' mahjong tile red dragon '
+p75
+sS'\xe2\x86\xaa'
+p76
+S' right arrow hook '
+p77
+sS'\xe2\x86\xa9'
+p78
+S' leftwards arrow hook '
+p79
+sS'\xe2\x86\x97'
+p80
+S' diagonal arrow '
+p81
+sS'\xe2\x86\x96'
+p82
+g81
+sS'\xe2\x86\x95'
+p83
+S' up down arrow '
+p84
+sS'\xe2\x86\x94'
+p85
+S' left right arrow '
+p86
+sS'\xe2\x86\x99'
+p87
+g81
+sS'\xe2\x86\x98'
+p88
+g81
+sS'\xe2\x9a\xbe'
+p89
+S' baseball '
+p90
+sS'\xe2\x9a\xbd'
+p91
+S' soccer ball '
+p92
+sS'\xe2\x9a\xa1'
+p93
+S' high voltage '
+p94
+sS'\xe2\x9a\xa0'
+p95
+S' warning '
+p96
+sS'\xe2\x9a\xab'
+p97
+S' medium black circle '
+p98
+sS'\xe2\x9a\xaa'
+p99
+S' medium white circle '
+p100
+sS'\xe2\x9a\x93'
+p101
+S' anchor '
+p102
+sS'3\xe2\x83\xa3'
+p103
+S' three '
+p104
+sS'\xe2\x93\x82'
+p105
+S' circled m '
+p106
+sS'\xf0\x9f\x96\x95'
+p107
+S' middle finger '
+p108
+sS'\xf0\x9f\x8f\xb0'
+p109
+S' european castle '
+p110
+sS'8\xe2\x83\xa3'
+p111
+S' eight '
+p112
+sS'\xf0\x9f\x87\xb0\xf0\x9f\x87\xb7'
+p113
+S' country kr '
+p114
+sS'\xe2\xad\x90'
+p115
+S' white medium star '
+p116
+sS'\xe2\xad\x95'
+p117
+S' heavy large circle '
+p118
+sS'\xf0\x9f\x91\xb0'
+p119
+S' bride veil '
+p120
+sS'\xf0\x9f\x91\xb1'
+p121
+S' blond hair '
+p122
+sS'\xf0\x9f\x91\xb2'
+p123
+S' man gua pi mao '
+p124
+sS'\xf0\x9f\x91\xb3'
+p125
+S' man turban '
+p126
+sS'\xf0\x9f\x91\xb4'
+p127
+S' older man '
+p128
+sS'\xf0\x9f\x91\xb5'
+p129
+S' older woman '
+p130
+sS'\xf0\x9f\x91\xb6'
+p131
+S' baby '
+p132
+sS'\xf0\x9f\x91\xb7'
+p133
+S' construction worker '
+p134
+sS'\xf0\x9f\x91\xb8'
+p135
+S' princess '
+p136
+sS'\xf0\x9f\x91\xb9'
+p137
+S' japanese ogre '
+p138
+sS'\xf0\x9f\x91\xba'
+p139
+S' japanese goblin '
+p140
+sS'\xf0\x9f\x91\xbb'
+p141
+S' ghost '
+p142
+sS'\xf0\x9f\x91\xbc'
+p143
+S' baby angel '
+p144
+sS'\xf0\x9f\x91\xbd'
+p145
+S' alien '
+p146
+sS'\xf0\x9f\x91\xbe'
+p147
+S' alien monster '
+p148
+sS'\xf0\x9f\x91\xbf'
+p149
+S' imp '
+p150
+sS'\xf0\x9f\x91\xa0'
+p151
+S' high heeled shoe '
+p152
+sS'\xf0\x9f\x91\xa1'
+p153
+S' womans sandal '
+p154
+sS'\xf0\x9f\x91\xa2'
+p155
+S' womans boots '
+p156
+sS'\xf0\x9f\x91\xa3'
+p157
+S' footprints '
+p158
+sS'\xf0\x9f\x91\xa4'
+p159
+S' bust in silhouette '
+p160
+sS'\xf0\x9f\x91\xa5'
+p161
+S' busts in silhouette '
+p162
+sS'\xf0\x9f\x91\xa6'
+p163
+S' boy '
+p164
+sS'\xf0\x9f\x91\xa7'
+p165
+S' girl '
+p166
+sS'\xf0\x9f\x91\xa8'
+p167
+S' man '
+p168
+sS'\xf0\x9f\x91\xa9'
+p169
+S' woman '
+p170
+sS'\xf0\x9f\x91\xaa'
+p171
+S' family '
+p172
+sS'\xf0\x9f\x91\xab'
+p173
+S' holding hands '
+p174
+sS'\xf0\x9f\x91\xac'
+p175
+g174
+sS'\xf0\x9f\x91\xad'
+p176
+g174
+sS'\xf0\x9f\x91\xae'
+p177
+S' police officer '
+p178
+sS'\xf0\x9f\x91\xaf'
+p179
+S' woman bunny ears '
+p180
+sS'\xf0\x9f\x91\x90'
+p181
+S' open hands '
+p182
+sS'\xf0\x9f\x91\x91'
+p183
+S' crown '
+p184
+sS'\xf0\x9f\x91\x92'
+p185
+S' womans hat '
+p186
+sS'\xf0\x9f\x91\x93'
+p187
+S' eyeglasses '
+p188
+sS'\xf0\x9f\x91\x94'
+p189
+S' necktie '
+p190
+sS'\xf0\x9f\x91\x95'
+p191
+S' t shirt '
+p192
+sS'\xf0\x9f\x91\x96'
+p193
+S' jeans '
+p194
+sS'\xf0\x9f\x91\x97'
+p195
+S' dress '
+p196
+sS'\xf0\x9f\x91\x98'
+p197
+S' kimono '
+p198
+sS'\xf0\x9f\x91\x99'
+p199
+S' bikini '
+p200
+sS'\xf0\x9f\x91\x9a'
+p201
+S' womans clothes '
+p202
+sS'\xf0\x9f\x91\x9b'
+p203
+S' purse '
+p204
+sS'\xf0\x9f\x91\x9c'
+p205
+S' handbag '
+p206
+sS'\xf0\x9f\x91\x9d'
+p207
+S' pouch '
+p208
+sS'\xf0\x9f\x91\x9e'
+p209
+S' mans shoe '
+p210
+sS'\xf0\x9f\x91\x9f'
+p211
+S' athletic shoe '
+p212
+sS'\xf0\x9f\x91\x80'
+p213
+S' eyes '
+p214
+sS'\xf0\x9f\x91\x82'
+p215
+S' ear '
+p216
+sS'\xf0\x9f\x91\x83'
+p217
+S' nose '
+p218
+sS'\xf0\x9f\x91\x84'
+p219
+S' mouth '
+p220
+sS'\xf0\x9f\x91\x85'
+p221
+S' tongue '
+p222
+sS'\xf0\x9f\x91\x86'
+p223
+S' up backhand index '
+p224
+sS'\xf0\x9f\x91\x87'
+p225
+S' down backhand index '
+p226
+sS'\xf0\x9f\x91\x88'
+p227
+S' left backhand index '
+p228
+sS'\xf0\x9f\x91\x89'
+p229
+S' right backhand index '
+p230
+sS'\xf0\x9f\x91\x8a'
+p231
+S' fist '
+p232
+sS'\xf0\x9f\x91\x8b'
+p233
+S' waving hand '
+p234
+sS'\xf0\x9f\x91\x8c'
+p235
+g69
+sS'\xf0\x9f\x93\xb4'
+p236
+S' mobile phone off '
+p237
+sS'\xf0\x9f\x91\x8e'
+p238
+S' thumbs down '
+p239
+sS'\xf0\x9f\x91\x8f'
+p240
+S' clapping '
+p241
+sS'\xf0\x9f\x98\x9b'
+p242
+S' stuck out tongue '
+p243
+sS'\xf0\x9f\x98\x9a'
+p244
+S' kissing closed eyes '
+p245
+sS'\xf0\x9f\x98\x99'
+p246
+S' kissing smile eyes '
+p247
+sS'\xf0\x9f\x98\x98'
+p248
+S' throwing a kiss '
+p249
+sS'\xf0\x9f\x98\x9f'
+p250
+S' worried '
+p251
+sS'\xf0\x9f\x98\x9e'
+p252
+S' disappointed '
+p253
+sS'\xf0\x9f\x98\x9d'
+p254
+S' tongue closed eyes '
+p255
+sS'\xf0\x9f\x98\x9c'
+p256
+S' tongue wink '
+p257
+sS'\xf0\x9f\x98\x93'
+p258
+S' cold sweat '
+p259
+sS'\xf0\x9f\x98\x92'
+p260
+S' unamused '
+p261
+sS'\xf0\x9f\x98\x91'
+p262
+S' expressionless '
+p263
+sS'\xf0\x9f\x98\x90'
+p264
+S' neutral '
+p265
+sS'\xf0\x9f\x98\x97'
+p266
+S' kissing '
+p267
+sS'\xf0\x9f\x98\x96'
+p268
+S' confounded '
+p269
+sS'\xf0\x9f\x98\x95'
+p270
+S' confused '
+p271
+sS'\xf0\x9f\x98\x94'
+p272
+S' pensive '
+p273
+sS'\xf0\x9f\x98\x8b'
+p274
+S' yum '
+p275
+sS'\xf0\x9f\x98\x8a'
+p276
+S' smile smile eyes '
+p277
+sS'\xf0\x9f\x98\x89'
+p278
+S' wink '
+p279
+sS'\xf0\x9f\x98\x88'
+p280
+S' smile horns '
+p281
+sS'\xf0\x9f\x98\x8f'
+p282
+S' smirk '
+p283
+sS'\xf0\x9f\x98\x8e'
+p284
+S' smile sunglasses '
+p285
+sS'\xf0\x9f\x98\x8d'
+p286
+S' smile heart eyes '
+p287
+sS'\xf0\x9f\x98\x8c'
+p288
+S' relieved '
+p289
+sS'\xf0\x9f\x98\x83'
+p290
+S' smile open '
+p291
+sS'\xf0\x9f\x98\x82'
+p292
+S' tears of joy '
+p293
+sS'\xf0\x9f\x98\x81'
+p294
+S' grinning smile eyes '
+p295
+sS'\xf0\x9f\x98\x80'
+p296
+S' grinning '
+p297
+sS'\xf0\x9f\x98\x87'
+p298
+S' smile halo '
+p299
+sS'\xf0\x9f\x98\x86'
+p300
+S' smile open closed eyes '
+p301
+sS'\xf0\x9f\x98\x85'
+p302
+S' smile open cold sweat '
+p303
+sS'\xf0\x9f\x98\x84'
+p304
+S' smile open smile eyes '
+p305
+sS'\xf0\x9f\x98\xbb'
+p306
+g287
+sS'\xf0\x9f\x98\xba'
+p307
+S' smile open mouth '
+p308
+sS'\xf0\x9f\x98\xb9'
+p309
+g293
+sS'\xf0\x9f\x98\xb8'
+p310
+g295
+sS'\xf0\x9f\x98\xbf'
+p311
+S' crying '
+p312
+sS'\xf0\x9f\x98\xbe'
+p313
+g57
+sS'\xf0\x9f\x98\xbd'
+p314
+g245
+sS'\xf0\x9f\x98\xbc'
+p315
+S' wry smile '
+p316
+sS'\xf0\x9f\x98\xb3'
+p317
+S' flushed '
+p318
+sS'\xf0\x9f\x98\xb2'
+p319
+S' astonished '
+p320
+sS'\xf0\x9f\x98\xb1'
+p321
+S' screaming in fear '
+p322
+sS'\xf0\x9f\x98\xb0'
+p323
+S' open cold sweat '
+p324
+sS'\xf0\x9f\x98\xb7'
+p325
+S' medical mask '
+p326
+sS'\xf0\x9f\x98\xb6'
+p327
+S' without mouth '
+p328
+sS'\xf0\x9f\x98\xb5'
+p329
+S' dizzy '
+p330
+sS'\xf0\x9f\x91\x8d'
+p331
+S' thumbs up '
+p332
+sS'\xf0\x9f\x98\xab'
+p333
+S' tired '
+p334
+sS'\xf0\x9f\x98\xaa'
+p335
+S' sleepy '
+p336
+sS'\xf0\x9f\x98\xa9'
+p337
+g61
+sS'\xf0\x9f\x98\xa8'
+p338
+S' fearful '
+p339
+sS'\xf0\x9f\x98\xaf'
+p340
+S' hushed '
+p341
+sS'\xf0\x9f\x98\xae'
+p342
+S' open mouth '
+p343
+sS'\xf0\x9f\x98\xad'
+p344
+S' loud crying '
+p345
+sS'\xf0\x9f\x98\xac'
+p346
+S' grimacing '
+p347
+sS'\xf0\x9f\x98\xa3'
+p348
+S' persevering '
+p349
+sS'\xf0\x9f\x98\xa2'
+p350
+g312
+sS'\xf0\x9f\x98\xa1'
+p351
+g57
+sS'\xf0\x9f\x98\xa0'
+p352
+S' angry '
+p353
+sS'\xf0\x9f\x98\xa7'
+p354
+S' anguished '
+p355
+sS'\xf0\x9f\x98\xa6'
+p356
+S' frowning open '
+p357
+sS'\xf0\x9f\x98\xa5'
+p358
+S' disappointed but relieved '
+p359
+sS'\xf0\x9f\x98\xa4'
+p360
+S' look of triumph '
+p361
+sS'#\xe2\x83\xa3'
+p362
+S' number sign '
+p363
+sS'\xe2\x9e\xb0'
+p364
+S' curly loop '
+p365
+sS'\xf3\xbe\x8c\xa7'
+p366
+g287
+sS'\xe2\x9b\xb5'
+p367
+S' sailboat '
+p368
+sS'\xe2\x9b\xb2'
+p369
+S' fountain '
+p370
+sS'\xe2\x9b\xb3'
+p371
+S' flag in hole '
+p372
+sS'\xe2\x9b\xbd'
+p373
+S' fuel pump '
+p374
+sS'\xe2\x9b\xba'
+p375
+S' tent '
+p376
+sS'\xe2\x98\xb9\xef\xb8\x8f'
+p377
+g55
+sS'\xe2\x9b\xaa'
+p378
+S' church '
+p379
+sS'\xe2\x9b\x94'
+p380
+S' no entry '
+p381
+sS'\xe2\x9b\x84'
+p382
+S' snowman without snow '
+p383
+sS'\xe2\x9b\x85'
+p384
+S' sun behind cloud '
+p385
+sS'\xe2\x9b\x8e'
+p386
+S' ophiuchus '
+p387
+sS'\xee\x90\xa7'
+p388
+S' chinese '
+p389
+sS'\xe2\x9e\x97'
+p390
+S' heavy division '
+p391
+sS'\xe2\x9e\x96'
+p392
+S' heavy minus '
+p393
+sS'\xe2\x9e\x95'
+p394
+S' heavy plus '
+p395
+sS'\xf0\x9f\x83\x8f'
+p396
+S' playing card black joker '
+p397
+sS'\xf0\x9f\x98\xb4'
+p398
+S' sleeping '
+p399
+sS'6\xe2\x83\xa3'
+p400
+S' six '
+p401
+sS'\xf0\x9f\xa4\x96'
+p402
+S' robot face '
+p403
+sS'\xf0\x9f\x8d\xa4'
+p404
+S' fried shrimp '
+p405
+sS'\xf0\x9f\x8d\xa5'
+p406
+S' fish cake swirl '
+p407
+sS'\xf0\x9f\x8d\xa6'
+p408
+S' soft ice cream '
+p409
+sS'\xf0\x9f\x8d\xa7'
+p410
+S' shaved ice '
+p411
+sS'\xf0\x9f\x8d\xa0'
+p412
+S' roasted potato '
+p413
+sS'\xf0\x9f\x8d\xa1'
+p414
+S' dango '
+p415
+sS'\xf0\x9f\x8d\xa2'
+p416
+S' oden '
+p417
+sS'\xf0\x9f\x8d\xa3'
+p418
+S' sushi '
+p419
+sS'\xf0\x9f\x8d\xac'
+p420
+S' candy '
+p421
+sS'\xf0\x9f\x8d\xad'
+p422
+S' lollipop '
+p423
+sS'\xf0\x9f\x8d\xae'
+p424
+S' custard '
+p425
+sS'\xf0\x9f\x8d\xaf'
+p426
+S' honey pot '
+p427
+sS'\xf0\x9f\x8d\xa8'
+p428
+S' ice cream '
+p429
+sS'\xf0\x9f\x8d\xa9'
+p430
+S' doughnut '
+p431
+sS'\xf0\x9f\x8d\xaa'
+p432
+S' cookie '
+p433
+sS'\xf0\x9f\x8d\xab'
+p434
+S' chocolate bar '
+p435
+sS'\xf0\x9f\x8d\xb4'
+p436
+S' fork knife '
+p437
+sS'\xf0\x9f\x8d\xb5'
+p438
+S' teacup without handle '
+p439
+sS'\xf0\x9f\x8d\xb6'
+p440
+S' sake bottle cup '
+p441
+sS'\xf0\x9f\x8d\xb7'
+p442
+S' wine glass '
+p443
+sS'\xf0\x9f\x8d\xb0'
+p444
+S' shortcake '
+p445
+sS'\xf0\x9f\x8d\xb1'
+p446
+S' bento box '
+p447
+sS'\xf0\x9f\x8d\xb2'
+p448
+S' pot of food '
+p449
+sS'\xf0\x9f\x8d\xb3'
+p450
+S' cooking '
+p451
+sS'\xf0\x9f\x8d\xbc'
+p452
+S' baby bottle '
+p453
+sS'\xf0\x9f\x8d\xb8'
+p454
+S' cocktail glass '
+p455
+sS'\xf0\x9f\x8d\xb9'
+p456
+S' tropical drink '
+p457
+sS'\xf0\x9f\x8d\xba'
+p458
+S' beer mug '
+p459
+sS'\xf0\x9f\x8d\xbb'
+p460
+S' clinking beer mugs '
+p461
+sS'\xf0\x9f\x8d\x84'
+p462
+S' mushroom '
+p463
+sS'\xf0\x9f\x8d\x85'
+p464
+S' tomato '
+p465
+sS'\xf0\x9f\x8d\x86'
+p466
+S' aubergine '
+p467
+sS'\xf0\x9f\x8d\x87'
+p468
+S' grapes '
+p469
+sS'\xf0\x9f\x8d\x80'
+p470
+S' four leaf clover '
+p471
+sS'\xf0\x9f\x8d\x81'
+p472
+S' maple leaf '
+p473
+sS'\xf0\x9f\x8d\x82'
+p474
+S' fallen leaf '
+p475
+sS'\xf0\x9f\x8d\x83'
+p476
+S' leaf in wind '
+p477
+sS'\xf0\x9f\x8d\x8c'
+p478
+S' banana '
+p479
+sS'\xf0\x9f\x8d\x8d'
+p480
+S' pineapple '
+p481
+sS'\xf0\x9f\x8d\x8e'
+p482
+S' red apple '
+p483
+sS'\xf0\x9f\x8d\x8f'
+p484
+S' green apple '
+p485
+sS'\xf0\x9f\x8d\x88'
+p486
+S' melon '
+p487
+sS'\xf0\x9f\x8d\x89'
+p488
+S' watermelon '
+p489
+sS'\xf0\x9f\x8d\x8a'
+p490
+S' tangerine '
+p491
+sS'\xf0\x9f\x8d\x8b'
+p492
+S' lemon '
+p493
+sS'\xf0\x9f\x8d\x94'
+p494
+S' hamburger '
+p495
+sS'\xf0\x9f\x8d\x95'
+p496
+S' slice of pizza '
+p497
+sS'\xf0\x9f\x8d\x96'
+p498
+S' meat on bone '
+p499
+sS'\xf0\x9f\x8d\x97'
+p500
+S' poultry leg '
+p501
+sS'\xf0\x9f\x8d\x90'
+p502
+S' pear '
+p503
+sS'\xf0\x9f\x8d\x91'
+p504
+S' peach '
+p505
+sS'\xf0\x9f\x8d\x92'
+p506
+S' cherries '
+p507
+sS'\xf0\x9f\x8d\x93'
+p508
+S' strawberry '
+p509
+sS'\xf0\x9f\x8d\x9c'
+p510
+S' steaming bowl '
+p511
+sS'\xf0\x9f\x8d\x9d'
+p512
+S' spaghetti '
+p513
+sS'\xf0\x9f\x8d\x9e'
+p514
+S' bread '
+p515
+sS'\xf0\x9f\x8d\x9f'
+p516
+S' french fries '
+p517
+sS'\xf0\x9f\x8d\x98'
+p518
+S' rice cracker '
+p519
+sS'\xf0\x9f\x8d\x99'
+p520
+S' rice ball '
+p521
+sS'\xf0\x9f\x8d\x9a'
+p522
+S' cooked rice '
+p523
+sS'\xf0\x9f\x8d\x9b'
+p524
+S' curry rice '
+p525
+sS'\xe2\x98\xb9'
+p526
+S' sad '
+p527
+sS'\xe2\x98\xbb'
+p528
+S' black smile '
+p529
+sS'\xe2\x98\xba'
+p530
+S' white smile '
+p531
+sS'\xe2\x98\x9d'
+p532
+S' white up index '
+p533
+sS'\xe2\x98\x91'
+p534
+S' ballot box check '
+p535
+sS'\xe2\x98\x95'
+p536
+S' hot beverage '
+p537
+sS'\xe2\x98\x94'
+p538
+S' umbrella rain drops '
+p539
+sS'\xe2\x98\x8e'
+p540
+S' black telephone '
+p541
+sS'\xe2\x98\x81'
+p542
+S' cloud '
+p543
+sS'\xe2\x98\x80'
+p544
+S' black sun rays '
+p545
+sS'\xe2\x98\x85'
+p546
+S' star '
+p547
+sS'\xe2\x98\x86'
+p548
+g547
+sS'\xf0\x9f\x90\xb3'
+p549
+S' spouting whale '
+p550
+sS'\xf0\x9f\x90\xb2'
+p551
+S' dragon '
+p552
+sS'\xf0\x9f\x90\xb1'
+p553
+S' cat '
+p554
+sS'\xf0\x9f\x90\xb0'
+p555
+S' rabbit '
+p556
+sS'\xf0\x9f\x90\xb7'
+p557
+S' pig '
+p558
+sS'\xf0\x9f\x90\xb6'
+p559
+S' dog '
+p560
+sS'\xf0\x9f\x90\xb5'
+p561
+S' monkey '
+p562
+sS'\xf0\x9f\x90\xb4'
+p563
+S' horse '
+p564
+sS'\xf0\x9f\x90\xbb'
+p565
+S' bear '
+p566
+sS'\xf0\x9f\x90\xba'
+p567
+S' wolf '
+p568
+sS'\xf0\x9f\x90\xb9'
+p569
+S' hamster '
+p570
+sS'\xf0\x9f\x90\xb8'
+p571
+S' frog '
+p572
+sS'\xf0\x9f\x90\xbe'
+p573
+S' paw prints '
+p574
+sS'\xf0\x9f\x90\xbd'
+p575
+S' pig nose '
+p576
+sS'\xf0\x9f\x90\xbc'
+p577
+S' panda '
+p578
+sS'\xf0\x9f\x90\xa3'
+p579
+S' hatching chick '
+p580
+sS'\xf0\x9f\x90\xa2'
+p581
+S' turtle '
+p582
+sS'\xf0\x9f\x90\xa1'
+p583
+S' blowfish '
+p584
+sS'\xf0\x9f\x90\xa0'
+p585
+S' tropical fish '
+p586
+sS'\xf0\x9f\x90\xa7'
+p587
+S' penguin '
+p588
+sS'\xf0\x9f\x90\xa6'
+p589
+S' bird '
+p590
+sS'\xf0\x9f\x90\xa5'
+p591
+S' front facing baby chick '
+p592
+sS'\xf0\x9f\x90\xa4'
+p593
+S' baby chick '
+p594
+sS'\xf0\x9f\x90\xab'
+p595
+S' bactrian camel '
+p596
+sS'\xf0\x9f\x90\xaa'
+p597
+S' dromedary camel '
+p598
+sS'\xf0\x9f\x90\xa9'
+p599
+S' poodle '
+p600
+sS'\xf0\x9f\x90\xa8'
+p601
+S' koala '
+p602
+sS'\xf0\x9f\x90\xaf'
+p603
+S' tiger '
+p604
+sS'\xf0\x9f\x90\xae'
+p605
+S' cow '
+p606
+sS'\xf0\x9f\x90\xad'
+p607
+S' mouse '
+p608
+sS'\xf0\x9f\x90\xac'
+p609
+S' dolphin '
+p610
+sS'\xf0\x9f\x90\x93'
+p611
+S' rooster '
+p612
+sS'\xf0\x9f\x90\x92'
+p613
+g562
+sS'\xf0\x9f\x90\x91'
+p614
+S' sheep '
+p615
+sS'\xf0\x9f\x90\x90'
+p616
+S' goat '
+p617
+sS'\xf0\x9f\x90\x97'
+p618
+S' boar '
+p619
+sS'\xf0\x9f\x90\x96'
+p620
+g558
+sS'\xf0\x9f\x90\x95'
+p621
+g560
+sS'\xf0\x9f\x90\x94'
+p622
+S' chicken '
+p623
+sS'\xf0\x9f\x90\x9b'
+p624
+S' bug '
+p625
+sS'\xf0\x9f\x90\x9a'
+p626
+S' spiral shell '
+p627
+sS'\xf0\x9f\x90\x99'
+p628
+S' octopus '
+p629
+sS'\xf0\x9f\x90\x98'
+p630
+S' elephant '
+p631
+sS'\xf0\x9f\x90\x9f'
+p632
+S' fish '
+p633
+sS'\xf0\x9f\x90\x9e'
+p634
+S' lady beetle '
+p635
+sS'\xf0\x9f\x90\x9d'
+p636
+S' honeybee '
+p637
+sS'\xf0\x9f\x90\x9c'
+p638
+S' ant '
+p639
+sS'\xf0\x9f\x90\x83'
+p640
+S' water buffalo '
+p641
+sS'\xf0\x9f\x90\x82'
+p642
+S' ox '
+p643
+sS'\xf0\x9f\x90\x81'
+p644
+g608
+sS'\xf0\x9f\x90\x80'
+p645
+S' rat '
+p646
+sS'\xf0\x9f\x90\x87'
+p647
+g556
+sS'\xf0\x9f\x90\x86'
+p648
+S' leopard '
+p649
+sS'\xf0\x9f\x90\x85'
+p650
+g604
+sS'\xf0\x9f\x90\x84'
+p651
+g606
+sS'\xf0\x9f\x90\x8b'
+p652
+S' whale '
+p653
+sS'\xf0\x9f\x90\x8a'
+p654
+S' crocodile '
+p655
+sS'\xf0\x9f\x90\x89'
+p656
+g552
+sS'\xf0\x9f\x90\x88'
+p657
+g554
+sS'\xf0\x9f\x90\x8f'
+p658
+S' ram '
+p659
+sS'\xf0\x9f\x90\x8e'
+p660
+g564
+sS'\xf0\x9f\x90\x8d'
+p661
+S' snake '
+p662
+sS'\xf0\x9f\x87\xae\xf0\x9f\x87\xb9'
+p663
+S' country it '
+p664
+sS'\xf0\x9f\x9a\x8a'
+p665
+S' tram '
+p666
+sS'\xf0\x9f\x9a\x8d'
+p667
+S' oncoming bus '
+p668
+sS'\xf0\x9f\x9a\x8c'
+p669
+S' bus '
+p670
+sS'\xf0\x9f\x9a\x8f'
+p671
+S' bus stop '
+p672
+sS'\xf0\x9f\x8c\xa0'
+p673
+S' shooting star '
+p674
+sS'\xf0\x9f\x8c\xb7'
+p675
+S' tulip '
+p676
+sS'\xf0\x9f\x8c\xb5'
+p677
+S' cactus '
+p678
+sS'\xf0\x9f\x8c\xb4'
+p679
+S' palm tree '
+p680
+sS'\xf0\x9f\x8c\xb3'
+p681
+S' deciduous tree '
+p682
+sS'\xf0\x9f\x8c\xb2'
+p683
+S' evergreen tree '
+p684
+sS'\xf0\x9f\x8c\xb1'
+p685
+S' seedling '
+p686
+sS'\xf0\x9f\x8c\xb0'
+p687
+S' chestnut '
+p688
+sS'\xf0\x9f\x8c\xbf'
+p689
+S' herb '
+p690
+sS'\xf0\x9f\x8c\xbe'
+p691
+S' ear of rice '
+p692
+sS'\xf0\x9f\x8c\xbd'
+p693
+S' ear of maize '
+p694
+sS'\xf0\x9f\x8c\xbc'
+p695
+S' blossom '
+p696
+sS'\xf0\x9f\x8c\xbb'
+p697
+S' sunflower '
+p698
+sS'\xf0\x9f\x8c\xba'
+p699
+S' hibiscus '
+p700
+sS'\xf0\x9f\x8c\xb9'
+p701
+S' rose '
+p702
+sS'\xf0\x9f\x8c\xb8'
+p703
+S' cherry blossom '
+p704
+sS'\xf0\x9f\x8c\x87'
+p705
+S' sunset over buildings '
+p706
+sS'\xf0\x9f\x8c\x86'
+p707
+S' cityscape at dusk '
+p708
+sS'\xf0\x9f\x8c\x85'
+p709
+S' sunrise '
+p710
+sS'\xf0\x9f\x8c\x84'
+p711
+S' sunrise over mountains '
+p712
+sS'\xf0\x9f\x8c\x83'
+p713
+S' night stars '
+p714
+sS'\xf0\x9f\x8c\x82'
+p715
+S' closed umbrella '
+p716
+sS'\xf0\x9f\x8c\x81'
+p717
+S' foggy '
+p718
+sS'\xf0\x9f\x8c\x80'
+p719
+S' cyclone '
+p720
+sS'\xf0\x9f\x8c\x8f'
+p721
+S' earth asia australia '
+p722
+sS'\xf0\x9f\x8c\x8e'
+p723
+S' earth americas '
+p724
+sS'\xf0\x9f\x8c\x8d'
+p725
+S' earth europe africa '
+p726
+sS'\xf0\x9f\x8c\x8c'
+p727
+S' milky way '
+p728
+sS'\xf0\x9f\x8c\x8b'
+p729
+S' volcano '
+p730
+sS'\xf0\x9f\x8c\x8a'
+p731
+S' water wave '
+p732
+sS'\xf0\x9f\x8c\x89'
+p733
+S' bridge at night '
+p734
+sS'\xf0\x9f\x8c\x88'
+p735
+S' rainbow '
+p736
+sS'\xf0\x9f\x8c\x97'
+p737
+S' last quarter moon '
+p738
+sS'\xf0\x9f\x8c\x96'
+p739
+S' waning gibbous moon '
+p740
+sS'\xf0\x9f\x8c\x95'
+p741
+S' full moon '
+p742
+sS'\xf0\x9f\x8c\x94'
+p743
+S' waxing gibbous moon '
+p744
+sS'\xf0\x9f\x8c\x93'
+p745
+S' first quarter moon '
+p746
+sS'\xf0\x9f\x8c\x92'
+p747
+S' waxing crescent moon '
+p748
+sS'\xf0\x9f\x8c\x91'
+p749
+S' new moon '
+p750
+sS'\xf0\x9f\x8c\x90'
+p751
+S' globe meridians '
+p752
+sS'\xf0\x9f\x8c\x9f'
+p753
+S' glowing star '
+p754
+sS'\xf0\x9f\x8c\x9e'
+p755
+S' sun '
+p756
+sS'\xf0\x9f\x8c\x9d'
+p757
+g742
+sS'\xf0\x9f\x8c\x9c'
+p758
+g738
+sS'\xf0\x9f\x8c\x9b'
+p759
+g746
+sS'\xf0\x9f\x8c\x9a'
+p760
+g750
+sS'\xf0\x9f\x8c\x99'
+p761
+S' crescent moon '
+p762
+sS'\xf0\x9f\x8c\x98'
+p763
+S' waning crescent moon '
+p764
+sS'\xd8\xa5\xd9\x86'
+p765
+S' arabic '
+p766
+sS'\xe2\x8f\xb0'
+p767
+S' alarm clock '
+p768
+sS'\xe2\x8f\xb3'
+p769
+S' hourglass flowing sand '
+p770
+sS'\xe2\x8f\xa9'
+p771
+S' right double triangle '
+p772
+sS'\xe2\x8f\xaa'
+p773
+S' left double triangle '
+p774
+sS'\xe2\x8f\xab'
+p775
+S' up double triangle '
+p776
+sS'\xe2\x8f\xac'
+p777
+S' down double triangle '
+p778
+sS'\xf0\x9f\x9b\x84'
+p779
+S' baggage claim '
+p780
+sS'\xf0\x9f\x9b\x85'
+p781
+S' left luggage '
+p782
+sS'\xf0\x9f\x9b\x82'
+p783
+S' passport control '
+p784
+sS'\xe2\x96\xb6'
+p785
+S' right triangle '
+p786
+sS'\xf0\x9f\x9b\x80'
+p787
+S' bath '
+p788
+sS'\xf0\x9f\x9b\x81'
+p789
+S' bathtub '
+p790
+sS'\xe2\x96\xbf'
+p791
+S'`'
+p792
+sS'\xe2\x96\xab'
+p793
+S' white square '
+p794
+sS'\xe2\x96\xaa'
+p795
+S' black square '
+p796
+sS'\xf0\x9f\x85\xbe'
+p797
+S' negative o '
+p798
+sS'\xf0\x9f\x85\xbf'
+p799
+S' negative p '
+p800
+sS'\xe2\x84\xa2'
+p801
+S' trade mark '
+p802
+sS'\xf0\x9f\x85\xb0'
+p803
+S' negative a '
+p804
+sS'\xf0\x9f\x85\xb1'
+p805
+S' negative b '
+p806
+sS'\xe2\x84\xb9'
+p807
+S' information source '
+p808
+sS'\xe2\x99\xbf'
+p809
+S' wheelchair '
+p810
+sS'\xe2\x99\xbb'
+p811
+S' universal recycling '
+p812
+sS'\xe2\x99\xaa'
+p813
+S' music '
+p814
+sS'\xe2\x99\xab'
+p815
+g814
+sS'\xe2\x99\xa8'
+p816
+S' hot springs '
+p817
+sS'\xe2\x99\xa6'
+p818
+S' diamond suit '
+p819
+sS'\xe2\x99\xa5'
+p820
+S' heart '
+p821
+sS'\xe2\x99\xa3'
+p822
+S' club suit '
+p823
+sS'\xe2\x99\xa0'
+p824
+S' spade suit '
+p825
+sS'\xe2\x99\xa1'
+p826
+g821
+sS'br\xc3\xbbl\xc3\xa9e'
+p827
+S' cry '
+p828
+sS'\xe2\x99\x92'
+p829
+S' zodiac '
+p830
+sS'\xe2\x99\x93'
+p831
+g830
+sS'\xe2\x99\x90'
+p832
+g830
+sS'\xe2\x99\x91'
+p833
+g830
+sS'\xe2\x99\x8e'
+p834
+g830
+sS'\xe2\x99\x8f'
+p835
+g830
+sS'\xe2\x99\x8c'
+p836
+g830
+sS'\xe2\x99\x8d'
+p837
+g830
+sS'\xe2\x99\x8a'
+p838
+g830
+sS'\xe2\x99\x8b'
+p839
+g830
+sS'\xe2\x99\x88'
+p840
+g830
+sS'\xe2\x99\x89'
+p841
+g830
+sS'\xe2\x99\x82'
+p842
+S' men '
+p843
+sS'\xe2\x99\x81'
+p844
+S' women '
+p845
+sS'\xf0\x9f\x87\xac\xf0\x9f\x87\xa7'
+p846
+S' country gb '
+p847
+sS'0\xe2\x83\xa3'
+p848
+S' zero '
+p849
+sS'\xf0\x9f\x9b\x83'
+p850
+S' customs '
+p851
+sS'\xf0\x9f\x87\xb7\xf0\x9f\x87\xba'
+p852
+S' country ru '
+p853
+sS'\xf0\x9f\x8f\xa2'
+p854
+S' office building '
+p855
+sS'\xf0\x9f\x8f\xa3'
+p856
+S' japanese post office '
+p857
+sS'\xf0\x9f\x8f\xa0'
+p858
+S' house building '
+p859
+sS'\xf0\x9f\x8f\xa1'
+p860
+S' house garden '
+p861
+sS'\xf0\x9f\x8f\xa6'
+p862
+S' bank '
+p863
+sS'\xf0\x9f\x8f\xa7'
+p864
+S' automated teller machine '
+p865
+sS'\xf0\x9f\x8f\xa4'
+p866
+S' european post office '
+p867
+sS'\xf0\x9f\x8f\xa5'
+p868
+S' hospital '
+p869
+sS'\xf0\x9f\x8f\xaa'
+p870
+S' convenience store '
+p871
+sS'\xf0\x9f\x8f\xab'
+p872
+S' school '
+p873
+sS'\xf0\x9f\x8f\xa8'
+p874
+S' hotel '
+p875
+sS'\xf0\x9f\x8f\xa9'
+p876
+S' love hotel '
+p877
+sS'\xf0\x9f\x8f\xae'
+p878
+S' izakaya lantern '
+p879
+sS'\xf0\x9f\x8f\xaf'
+p880
+S' japanese castle '
+p881
+sS'\xf0\x9f\x8f\xac'
+p882
+S' department store '
+p883
+sS'\xf0\x9f\x8f\xad'
+p884
+S' factory '
+p885
+sS'\xf0\x9f\x87\xaa\xf0\x9f\x87\xb8'
+p886
+S' country es '
+p887
+sS'\xf0\x9f\x8f\xbb'
+p888
+g26
+sS'\xf0\x9f\x8f\xbe'
+p889
+g26
+sS'\xf0\x9f\x8f\xbf'
+p890
+g26
+sS'\xf0\x9f\x8f\xbc'
+p891
+g26
+sS'\xf0\x9f\x8f\xbd'
+p892
+g26
+sS'\xf0\x9f\x8f\x82'
+p893
+S' snowboarder '
+p894
+sS'\xf0\x9f\x8f\x83'
+p895
+S' runner '
+p896
+sS'\xf0\x9f\x8f\x80'
+p897
+S' basketball hoop '
+p898
+sS'\xf0\x9f\x8f\x81'
+p899
+S' chequered flag '
+p900
+sS'\xf0\x9f\x8f\x86'
+p901
+S' trophy '
+p902
+sS'\xf0\x9f\x8f\x87'
+p903
+S' horse racing '
+p904
+sS'\xf0\x9f\x8f\x84'
+p905
+S' surfer '
+p906
+sS'\xf0\x9f\x8f\x8a'
+p907
+S' swimmer '
+p908
+sS'\xf0\x9f\x8f\x88'
+p909
+S' american football '
+p910
+sS'\xf0\x9f\x8f\x89'
+p911
+S' rugby football '
+p912
+sS'\xf0\x9f\x87\xa8\xf0\x9f\x87\xb3'
+p913
+S' country cn '
+p914
+sS'\xf0\x9f\x93\xbc'
+p915
+S' videocassette '
+p916
+sS'\xf0\x9f\x93\xba'
+p917
+S' television '
+p918
+sS'\xf0\x9f\x93\xbb'
+p919
+S' radio '
+p920
+sS'\xf0\x9f\x93\xb9'
+p921
+S' video camera '
+p922
+sS'\xf0\x9f\x93\xb6'
+p923
+S' antenna bars '
+p924
+sS'\xf0\x9f\x93\xb7'
+p925
+S' camera '
+p926
+sS'\xe2\x9e\xa1'
+p927
+S' black right arrow '
+p928
+sS'\xf0\x9f\x93\xb5'
+p929
+S' no mobile phones '
+p930
+sS'\xf0\x9f\x93\xb2'
+p931
+S' mobile phone arrow '
+p932
+sS'\xf0\x9f\x93\xb3'
+p933
+S' vibration mode '
+p934
+sS'\xf0\x9f\x93\xb0'
+p935
+S' newspaper '
+p936
+sS'\xf0\x9f\x93\xb1'
+p937
+S' mobile phone '
+p938
+sS'\xf0\x9f\x93\xae'
+p939
+S' postbox '
+p940
+sS'\xf0\x9f\x93\xaf'
+p941
+S' postal horn '
+p942
+sS'\xf0\x9f\x93\xac'
+p943
+S' open mailbox raised '
+p944
+sS'\xf0\x9f\x93\xad'
+p945
+S' open mailbox lowered '
+p946
+sS'\xf0\x9f\x93\xaa'
+p947
+S' closed mailbox lowered '
+p948
+sS'\xf0\x9f\x93\xab'
+p949
+S' closed mailbox raised '
+p950
+sS'\xf0\x9f\x93\xa8'
+p951
+S' incoming envelope '
+p952
+sS'\xf0\x9f\x93\xa9'
+p953
+S' envelope down arrow above '
+p954
+sS'\xf0\x9f\x93\xa6'
+p955
+S' package '
+p956
+sS'\xf0\x9f\x93\xa7'
+p957
+S' e mail '
+p958
+sS'\xf0\x9f\x93\xa4'
+p959
+S' outbox tray '
+p960
+sS'\xf0\x9f\x93\xa5'
+p961
+S' inbox tray '
+p962
+sS'\xf0\x9f\x93\xa2'
+p963
+S' public address loudspeaker '
+p964
+sS'\xf0\x9f\x93\xa3'
+p965
+S' cheering megaphone '
+p966
+sS'\xf0\x9f\x93\xa0'
+p967
+S' fax machine '
+p968
+sS'\xf0\x9f\x93\xa1'
+p969
+S' satellite antenna '
+p970
+sS'\xf0\x9f\x93\x9e'
+p971
+S' telephone receiver '
+p972
+sS'\xf0\x9f\x93\x9f'
+p973
+S' pager '
+p974
+sS'\xf0\x9f\x93\x9c'
+p975
+S' scroll '
+p976
+sS'\xf0\x9f\x93\x9d'
+p977
+S' memo '
+p978
+sS'\xf0\x9f\x93\x9a'
+p979
+S' books '
+p980
+sS'\xf0\x9f\x93\x9b'
+p981
+S' name badge '
+p982
+sS'\xf0\x9f\x93\x98'
+p983
+S' blue book '
+p984
+sS'\xf0\x9f\x93\x99'
+p985
+S' orange book '
+p986
+sS'\xf0\x9f\x93\x96'
+p987
+S' open book '
+p988
+sS'\xf0\x9f\x93\x97'
+p989
+S' green book '
+p990
+sS'\xf0\x9f\x93\x94'
+p991
+S' notebook cover '
+p992
+sS'\xf0\x9f\x93\x95'
+p993
+S' closed book '
+p994
+sS'\xf0\x9f\x93\x92'
+p995
+S' ledger '
+p996
+sS'\xf0\x9f\x93\x93'
+p997
+S' notebook '
+p998
+sS'\xf0\x9f\x93\x90'
+p999
+S' triangular ruler '
+p1000
+sS'\xf0\x9f\x93\x91'
+p1001
+S' bookmark tabs '
+p1002
+sS'\xf0\x9f\x93\x8e'
+p1003
+S' paperclip '
+p1004
+sS'\xf0\x9f\x93\x8f'
+p1005
+S' straight ruler '
+p1006
+sS'\xf0\x9f\x93\x8c'
+p1007
+S' pushpin '
+p1008
+sS'\xf0\x9f\x93\x8d'
+p1009
+S' round pushpin '
+p1010
+sS'\xf0\x9f\x93\x8a'
+p1011
+S' bar chart '
+p1012
+sS'\xf0\x9f\x93\x8b'
+p1013
+S' clipboard '
+p1014
+sS'\xf0\x9f\x93\x88'
+p1015
+S' chart up trend '
+p1016
+sS'\xf0\x9f\x93\x89'
+p1017
+S' chart down trend '
+p1018
+sS'\xf0\x9f\x93\x86'
+p1019
+S' tear off calendar '
+p1020
+sS'\xf0\x9f\x93\x87'
+p1021
+S' card index '
+p1022
+sS'\xf0\x9f\x93\x84'
+p1023
+S' page facing up '
+p1024
+sS'\xf0\x9f\x93\x85'
+p1025
+S' calendar '
+p1026
+sS'\xf0\x9f\x93\x82'
+p1027
+S' open folder '
+p1028
+sS'\xf0\x9f\x93\x83'
+p1029
+S' page curl '
+p1030
+sS'\xf0\x9f\x93\x80'
+p1031
+S' disc '
+p1032
+sS'\xf0\x9f\x93\x81'
+p1033
+S' folder '
+p1034
+sS'\xf0\x9f\x9a\xa1'
+p1035
+S' aerial tramway '
+p1036
+sS'\xf0\x9f\x9a\xa0'
+p1037
+S' mountain cableway '
+p1038
+sS'\xf0\x9f\x9a\xa3'
+p1039
+S' rowboat '
+p1040
+sS'\xf0\x9f\x9a\xa2'
+p1041
+S' ship '
+p1042
+sS'\xf0\x9f\x9a\xa5'
+p1043
+S' traffic light '
+p1044
+sS'\xf0\x9f\x9a\xa4'
+p1045
+S' speedboat '
+p1046
+sS'\xf0\x9f\x9a\xa7'
+p1047
+S' construction '
+p1048
+sS'\xf0\x9f\x9a\xa6'
+p1049
+g1044
+sS'\xf0\x9f\x9a\xa9'
+p1050
+S' triangular flag on post '
+p1051
+sS'\xf0\x9f\x9a\xa8'
+p1052
+S' police cars light '
+p1053
+sS'\xf0\x9f\x9a\xab'
+p1054
+g381
+sS'\xf0\x9f\x9a\xaa'
+p1055
+S' door '
+p1056
+sS'\xf0\x9f\x9a\xad'
+p1057
+S' no smoking '
+p1058
+sS'\xf0\x9f\x9a\xac'
+p1059
+S' smoking '
+p1060
+sS'\xf0\x9f\x9a\xaf'
+p1061
+S' do not litter '
+p1062
+sS'\xf0\x9f\x9a\xae'
+p1063
+S' put litter in its place '
+p1064
+sS'\xe2\x97\x80'
+p1065
+S' left triangle '
+p1066
+sS'\xf0\x9f\x9a\xb0'
+p1067
+S' potable water '
+p1068
+sS'\xf0\x9f\x9a\xb3'
+p1069
+S' no bicycles '
+p1070
+sS'\xf0\x9f\x9a\xb2'
+p1071
+S' bicycle '
+p1072
+sS'\xf0\x9f\x9a\xb5'
+p1073
+S' mountain bicyclist '
+p1074
+sS'\xf0\x9f\x9a\xb4'
+p1075
+S' bicyclist '
+p1076
+sS'\xf0\x9f\x9a\xb7'
+p1077
+S' no pedestrians '
+p1078
+sS'\xf0\x9f\x9a\xb6'
+p1079
+S' pedestrian '
+p1080
+sS'\xf0\x9f\x9a\xb9'
+p1081
+S' mens '
+p1082
+sS'\xf0\x9f\x9a\xb8'
+p1083
+S' children crossing '
+p1084
+sS'\xf0\x9f\x9a\xbb'
+p1085
+S' restroom '
+p1086
+sS'\xf0\x9f\x9a\xba'
+p1087
+S' womens '
+p1088
+sS'\xf0\x9f\x9a\xbd'
+p1089
+S' toilet '
+p1090
+sS'\xf0\x9f\x9a\xbc'
+p1091
+g132
+sS'\xf0\x9f\x9a\xbf'
+p1092
+S' shower '
+p1093
+sS'\xf0\x9f\x9a\xbe'
+p1094
+S' water closet '
+p1095
+sS'\xf0\x9f\x9a\x81'
+p1096
+S' helicopter '
+p1097
+sS'\xf0\x9f\x9a\x80'
+p1098
+S' rocket '
+p1099
+sS'\xf0\x9f\x9a\x83'
+p1100
+S' railway car '
+p1101
+sS'\xf0\x9f\x9a\x82'
+p1102
+S' steam locomotive '
+p1103
+sS'\xf0\x9f\x9a\x85'
+p1104
+S' speed train bullet nose '
+p1105
+sS'\xf0\x9f\x9a\x84'
+p1106
+S' speed train '
+p1107
+sS'\xe2\x8c\x9b'
+p1108
+S' hourglass '
+p1109
+sS'\xe2\x8c\x9a'
+p1110
+S' watch '
+p1111
+sS'\xf0\x9f\x9a\x89'
+p1112
+S' station '
+p1113
+sS'\xf0\x9f\x9a\x88'
+p1114
+S' light rail '
+p1115
+sS'\xf0\x9f\x9a\x8b'
+p1116
+S' busy '
+p1117
+sS'\xe2\x97\xbb'
+p1118
+g794
+sS'\xe2\x97\xbc'
+p1119
+g796
+sS'\xe2\x97\xbd'
+p1120
+g794
+sS'\xe2\x97\xbe'
+p1121
+g796
+sS'\xf0\x9f\x9a\x8e'
+p1122
+S' trolleybus '
+p1123
+sS'\xf0\x9f\x9a\x91'
+p1124
+S' ambulance '
+p1125
+sS'\xf0\x9f\x9a\x90'
+p1126
+S' minibus '
+p1127
+sS'\xf0\x9f\x9a\x93'
+p1128
+S' police car '
+p1129
+sS'\xf0\x9f\x9a\x92'
+p1130
+S' fire engine '
+p1131
+sS'\xf0\x9f\x9a\x95'
+p1132
+S' taxi '
+p1133
+sS'\xf0\x9f\x9a\x94'
+p1134
+S' oncoming police car '
+p1135
+sS'\xf0\x9f\x9a\x97'
+p1136
+S' automobile '
+p1137
+sS'\xf0\x9f\x9a\x96'
+p1138
+S' oncoming taxi '
+p1139
+sS'\xf0\x9f\x9a\x99'
+p1140
+S' recreational vehicle '
+p1141
+sS'\xf0\x9f\x9a\x98'
+p1142
+S' oncoming automobile '
+p1143
+sS'\xf0\x9f\x9a\x9b'
+p1144
+S' articulated lorry '
+p1145
+sS'\xf0\x9f\x9a\x9a'
+p1146
+S' delivery truck '
+p1147
+sS'\xf0\x9f\x9a\x9d'
+p1148
+S' monorail '
+p1149
+sS'\xf0\x9f\x9a\x9c'
+p1150
+S' tractor '
+p1151
+sS'\xf0\x9f\x9a\x9f'
+p1152
+S' suspension railway '
+p1153
+sS'\xf0\x9f\x9a\x9e'
+p1154
+S' mountain railway '
+p1155
+sS'\xf0\x9f\x9a\xb1'
+p1156
+S' non potable water '
+p1157
+sS'1\xe2\x83\xa3'
+p1158
+S' one '
+p1159
+sS'\xe0\xa5\xa3'
+p1160
+g766
+sS'\xf0\x9f\x95\xa4'
+p1161
+S' clock '
+p1162
+sS'\xf0\x9f\x95\xa5'
+p1163
+g1162
+sS'\xf0\x9f\x95\xa6'
+p1164
+g1162
+sS'\xf0\x9f\x95\xa7'
+p1165
+g1162
+sS'\xf0\x9f\x95\xa0'
+p1166
+g1162
+sS'\xf0\x9f\x95\xa1'
+p1167
+g1162
+sS'\xf0\x9f\x95\xa2'
+p1168
+g1162
+sS'\xf0\x9f\x95\xa3'
+p1169
+g1162
+sS'7\xe2\x83\xa3'
+p1170
+S' seven '
+p1171
+sS'\xf0\x9f\x95\x9c'
+p1172
+g1162
+sS'\xf0\x9f\x95\x9d'
+p1173
+g1162
+sS'\xf0\x9f\x95\x9e'
+p1174
+g1162
+sS'\xf0\x9f\x95\x9f'
+p1175
+g1162
+sS'\xf0\x9f\x95\x98'
+p1176
+g1162
+sS'\xf0\x9f\x95\x99'
+p1177
+g1162
+sS'\xf0\x9f\x95\x9a'
+p1178
+g1162
+sS'\xf0\x9f\x95\x9b'
+p1179
+g1162
+sS'\xf0\x9f\x95\x94'
+p1180
+g1162
+sS'\xf0\x9f\x95\x95'
+p1181
+g1162
+sS'\xf0\x9f\x95\x96'
+p1182
+g1162
+sS'\xf0\x9f\x95\x97'
+p1183
+g1162
+sS'\xf0\x9f\x95\x90'
+p1184
+g1162
+sS'\xf0\x9f\x95\x91'
+p1185
+g1162
+sS'\xf0\x9f\x95\x92'
+p1186
+g1162
+sS'\xf0\x9f\x95\x93'
+p1187
+g1162
+sS'\xf0\x9f\x92\xb9'
+p1188
+S' chart up trend yen '
+p1189
+sS'\xf0\x9f\x92\xb8'
+p1190
+S' money wings '
+p1191
+sS'\xf0\x9f\x92\xbb'
+p1192
+S' personal computer '
+p1193
+sS'\xf0\x9f\x92\xba'
+p1194
+S' seat '
+p1195
+sS'\xf0\x9f\x92\xbd'
+p1196
+g1032
+sS'\xf0\x9f\x92\xbc'
+p1197
+S' briefcase '
+p1198
+sS'\xf0\x9f\x92\xbf'
+p1199
+g1032
+sS'\xf0\x9f\x92\xbe'
+p1200
+g1032
+sS'\xf0\x9f\x92\xb1'
+p1201
+S' money exchange '
+p1202
+sS'\xf0\x9f\x92\xb0'
+p1203
+S' money bag '
+p1204
+sS'\xf0\x9f\x92\xb3'
+p1205
+S' credit card '
+p1206
+sS'\xf0\x9f\x92\xb2'
+p1207
+S' heavy money '
+p1208
+sS'\xf0\x9f\x92\xb5'
+p1209
+S' money '
+p1210
+sS'\xf0\x9f\x92\xb4'
+p1211
+g1210
+sS'\xf0\x9f\x92\xb7'
+p1212
+g1210
+sS'\xf0\x9f\x92\xb6'
+p1213
+g1210
+sS'\xf0\x9f\x92\xa9'
+p1214
+S' pile of poo '
+p1215
+sS'\xf0\x9f\x92\xa8'
+p1216
+S' dash '
+p1217
+sS'\xf0\x9f\x92\xab'
+p1218
+g330
+sS'\xf0\x9f\x92\xaa'
+p1219
+S' flexed biceps '
+p1220
+sS'\xf0\x9f\x92\xad'
+p1221
+S' thought balloon '
+p1222
+sS'\xf0\x9f\x92\xac'
+p1223
+S' speech balloon '
+p1224
+sS'\xf0\x9f\x92\xaf'
+p1225
+S' hundred points '
+p1226
+sS'\xf0\x9f\x92\xae'
+p1227
+S' white flower '
+p1228
+sS'\xf0\x9f\x92\xa1'
+p1229
+S' electric light bulb '
+p1230
+sS'\xf0\x9f\x92\xa0'
+p1231
+S' diamond with dot '
+p1232
+sS'\xf0\x9f\x92\xa3'
+p1233
+S' bomb '
+p1234
+sS'\xf0\x9f\x92\xa2'
+p1235
+S' anger '
+p1236
+sS'\xf0\x9f\x92\xa5'
+p1237
+S' collision '
+p1238
+sS'\xf0\x9f\x92\xa4'
+p1239
+g399
+sS'\xf0\x9f\x92\xa7'
+p1240
+S' droplet '
+p1241
+sS'\xf0\x9f\x92\xa6'
+p1242
+S' splashing sweat '
+p1243
+sS'\xf0\x9f\x92\x99'
+p1244
+S' blue heart '
+p1245
+sS'\xf0\x9f\x92\x98'
+p1246
+S' heart arrow '
+p1247
+sS'\xf0\x9f\x92\x9b'
+p1248
+S' yellow heart '
+p1249
+sS'\xf0\x9f\x92\x9a'
+p1250
+S' green heart '
+p1251
+sS'\xf0\x9f\x92\x9d'
+p1252
+S' heart ribbon '
+p1253
+sS'\xf0\x9f\x92\x9c'
+p1254
+S' purple heart '
+p1255
+sS'\xf0\x9f\x92\x9f'
+p1256
+S' heart decoration '
+p1257
+sS'\xf0\x9f\x92\x9e'
+p1258
+S' revolving hearts '
+p1259
+sS'\xf0\x9f\x92\x91'
+p1260
+S' couple heart '
+p1261
+sS'\xf0\x9f\x92\x90'
+p1262
+S' bouquet '
+p1263
+sS'\xf0\x9f\x92\x93'
+p1264
+S' beating heart '
+p1265
+sS'\xf0\x9f\x92\x92'
+p1266
+S' wedding '
+p1267
+sS'\xf0\x9f\x92\x95'
+p1268
+S' two hearts '
+p1269
+sS'\xf0\x9f\x92\x94'
+p1270
+S' broken heart '
+p1271
+sS'\xf0\x9f\x92\x97'
+p1272
+S' growing heart '
+p1273
+sS'\xf0\x9f\x92\x96'
+p1274
+S' sparkling heart '
+p1275
+sS'\xf0\x9f\x92\x89'
+p1276
+S' syringe '
+p1277
+sS'\xf0\x9f\x92\x88'
+p1278
+S' barber pole '
+p1279
+sS'\xf0\x9f\x92\x8b'
+p1280
+S' kiss mark '
+p1281
+sS'\xf0\x9f\x92\x8a'
+p1282
+S' pill '
+p1283
+sS'\xf0\x9f\x92\x8d'
+p1284
+S' ring '
+p1285
+sS'\xf0\x9f\x92\x8c'
+p1286
+S' love letter '
+p1287
+sS'\xf0\x9f\x92\x8f'
+p1288
+S' kiss '
+p1289
+sS'\xf0\x9f\x92\x8e'
+p1290
+S' gem stone '
+p1291
+sS'\xf0\x9f\x92\x81'
+p1292
+S' information desk person '
+p1293
+sS'\xf0\x9f\x92\x80'
+p1294
+S' skull '
+p1295
+sS'\xf0\x9f\x92\x83'
+p1296
+S' dancer '
+p1297
+sS'\xf0\x9f\x92\x82'
+p1298
+S' guardsman '
+p1299
+sS'\xf0\x9f\x92\x85'
+p1300
+S' nail polish '
+p1301
+sS'\xf0\x9f\x92\x84'
+p1302
+S' lipstick '
+p1303
+sS'\xf0\x9f\x92\x87'
+p1304
+S' haircut '
+p1305
+sS'\xf0\x9f\x92\x86'
+p1306
+S' massage '
+p1307
+sS'\xf0\x9f\x8e\xad'
+p1308
+S' performing arts '
+p1309
+sS'\xf0\x9f\x8e\xac'
+p1310
+S' clapper board '
+p1311
+sS'\xf0\x9f\x8e\xaf'
+p1312
+S' direct hit '
+p1313
+sS'\xf0\x9f\x8e\xae'
+p1314
+S' video game '
+p1315
+sS'\xf0\x9f\x8e\xa9'
+p1316
+S' top hat '
+p1317
+sS'\xf0\x9f\x8e\xa8'
+p1318
+S' artist palette '
+p1319
+sS'\xf0\x9f\x8e\xab'
+p1320
+S' ticket '
+p1321
+sS'\xf0\x9f\x8e\xaa'
+p1322
+S' circus tent '
+p1323
+sS'\xf0\x9f\x8e\xa5'
+p1324
+S' movie camera '
+p1325
+sS'\xf0\x9f\x8e\xa4'
+p1326
+S' microphone '
+p1327
+sS'\xf0\x9f\x8e\xa7'
+p1328
+S' headphone '
+p1329
+sS'\xf0\x9f\x8e\xa6'
+p1330
+S' cinema '
+p1331
+sS'\xf0\x9f\x8e\xa1'
+p1332
+S' ferris wheel '
+p1333
+sS'\xf0\x9f\x8e\xa0'
+p1334
+S' carousel horse '
+p1335
+sS'\xf0\x9f\x8e\xa3'
+p1336
+S' fishing pole fish '
+p1337
+sS'\xf0\x9f\x8e\xa2'
+p1338
+S' roller coaster '
+p1339
+sS'\xf0\x9f\x8e\xbd'
+p1340
+S' running shirt sash '
+p1341
+sS'\xf0\x9f\x8e\xbc'
+p1342
+S' musical score '
+p1343
+sS'\xf0\x9f\x8e\xbf'
+p1344
+S' ski ski boot '
+p1345
+sS'\xf0\x9f\x8e\xbe'
+p1346
+S' tennis racquet ball '
+p1347
+sS'\xf0\x9f\x8e\xb9'
+p1348
+S' musical keyboard '
+p1349
+sS'\xf0\x9f\x8e\xb8'
+p1350
+S' guitar '
+p1351
+sS'\xf0\x9f\x8e\xbb'
+p1352
+S' violin '
+p1353
+sS'\xf0\x9f\x8e\xba'
+p1354
+S' trumpet '
+p1355
+sS'\xf0\x9f\x8e\xb5'
+p1356
+S' musical note '
+p1357
+sS'\xf0\x9f\x8e\xb4'
+p1358
+S' flower playing cards '
+p1359
+sS'\xf0\x9f\x8e\xb7'
+p1360
+S' saxophone '
+p1361
+sS'\xf0\x9f\x8e\xb6'
+p1362
+S' multiple musical notes '
+p1363
+sS'\xf0\x9f\x8e\xb1'
+p1364
+S' billiards '
+p1365
+sS'\xf0\x9f\x8e\xb0'
+p1366
+S' slot machine '
+p1367
+sS'\xf0\x9f\x8e\xb3'
+p1368
+S' bowling '
+p1369
+sS'\xf0\x9f\x8e\xb2'
+p1370
+S' game die '
+p1371
+sS'\xf0\x9f\x8e\x8d'
+p1372
+S' pine decoration '
+p1373
+sS'\xf0\x9f\x8e\x8c'
+p1374
+S' crossed flags '
+p1375
+sS'\xf0\x9f\x8e\x8f'
+p1376
+S' carp streamer '
+p1377
+sS'\xf0\x9f\x8e\x8e'
+p1378
+S' japanese dolls '
+p1379
+sS'\xf0\x9f\x8e\x89'
+p1380
+S' party popper '
+p1381
+sS'\xf0\x9f\x8e\x88'
+p1382
+S' balloon '
+p1383
+sS'\xf0\x9f\x8e\x8b'
+p1384
+S' tanabata tree '
+p1385
+sS'\xf0\x9f\x8e\x8a'
+p1386
+S' confetti ball '
+p1387
+sS'\xf0\x9f\x8e\x85'
+p1388
+S' father christmas '
+p1389
+sS'\xf0\x9f\x8e\x84'
+p1390
+S' christmas tree '
+p1391
+sS'\xf0\x9f\x8e\x87'
+p1392
+S' firework sparkler '
+p1393
+sS'\xf0\x9f\x8e\x86'
+p1394
+S' fireworks '
+p1395
+sS'\xf0\x9f\x8e\x81'
+p1396
+S' wrapped present '
+p1397
+sS'\xf0\x9f\x8e\x80'
+p1398
+S' ribbon '
+p1399
+sS'\xf0\x9f\x8e\x83'
+p1400
+S' jack o lantern '
+p1401
+sS'\xf0\x9f\x8e\x82'
+p1402
+S' birthday cake '
+p1403
+sS'\xf0\x9f\x8e\x91'
+p1404
+S' moon viewing ceremony '
+p1405
+sS'\xf0\x9f\x8e\x90'
+p1406
+S' wind chime '
+p1407
+sS'\xf0\x9f\x8e\x93'
+p1408
+S' graduation cap '
+p1409
+sS'\xf0\x9f\x8e\x92'
+p1410
+S' school satchel '
+p1411
+sS'\xf0\x9f\x9a\x87'
+p1412
+S' metro '
+p1413
+sS'\xf0\x9f\x9a\x86'
+p1414
+S' train '
+p1415
+sS'\xe2\x9c\xa8'
+p1416
+S' sparkles '
+p1417
+sS'4\xe2\x83\xa3'
+p1418
+S' four '
+p1419
+sS'\xe2\x9c\xb4'
+p1420
+S' eight pointed black star '
+p1421
+sS'\xe2\x9c\xb3'
+p1422
+S' eight spoked asterisk '
+p1423
+sS'\xe2\x9c\x8c'
+p1424
+S' victory hand '
+p1425
+sS'\xe2\x9c\x8f'
+p1426
+S' pencil '
+p1427
+sS'\xe2\x9c\x89'
+p1428
+S' envelope '
+p1429
+sS'\xe2\x9c\x88'
+p1430
+S' airplane '
+p1431
+sS'\xe2\x9c\x8b'
+p1432
+S' raised hand '
+p1433
+sS'\xe2\x9c\x8a'
+p1434
+S' raised fist '
+p1435
+sS'\xe2\x9c\x85'
+p1436
+S' white heavy check mark '
+p1437
+sS'\xe2\x9c\x82'
+p1438
+S' black scissors '
+p1439
+sS'\xe2\x9c\x94'
+p1440
+S' heavy check mark '
+p1441
+sS'\xe2\x9c\x96'
+p1442
+S' heavy multiplication x '
+p1443
+sS'\xe2\x9c\x92'
+p1444
+S' black nib '
+p1445
+sS'\xf0\x9f\x94\xaf'
+p1446
+S' six star dot '
+p1447
+sS'\xf0\x9f\x94\xae'
+p1448
+S' crystal ball '
+p1449
+sS'\xf0\x9f\x94\xad'
+p1450
+S' telescope '
+p1451
+sS'\xf0\x9f\x94\xac'
+p1452
+S' microscope '
+p1453
+sS'\xf0\x9f\x94\xab'
+p1454
+S' pistol '
+p1455
+sS'\xf0\x9f\x94\xaa'
+p1456
+S' hocho '
+p1457
+sS'\xf0\x9f\x94\xa9'
+p1458
+S' nut bolt '
+p1459
+sS'\xf0\x9f\x94\xa8'
+p1460
+S' hammer '
+p1461
+sS'\xf0\x9f\x94\xa7'
+p1462
+S' wrench '
+p1463
+sS'\xf0\x9f\x94\xa6'
+p1464
+S' electric torch '
+p1465
+sS'\xf0\x9f\x94\xa5'
+p1466
+S' fire '
+p1467
+sS'\xf0\x9f\x94\xa4'
+p1468
+S' input letters '
+p1469
+sS'\xf0\x9f\x94\xa3'
+p1470
+S' input symbols '
+p1471
+sS'\xf0\x9f\x94\xa2'
+p1472
+S' input numbers '
+p1473
+sS'\xf0\x9f\x94\xa1'
+p1474
+g1469
+sS'\xf0\x9f\x94\xa0'
+p1475
+g1469
+sS'\xf0\x9f\x94\xbd'
+p1476
+S' down triangle '
+p1477
+sS'\xf0\x9f\x94\xbc'
+p1478
+S' up triangle '
+p1479
+sS'\xf0\x9f\x94\xbb'
+p1480
+g1477
+sS'\xf0\x9f\x94\xba'
+p1481
+g1479
+sS'\xf0\x9f\x94\xb9'
+p1482
+S' diamond '
+p1483
+sS'\xf0\x9f\x94\xb8'
+p1484
+g1483
+sS'\xf0\x9f\x94\xb7'
+p1485
+g1483
+sS'\xf0\x9f\x94\xb6'
+p1486
+g1483
+sS'\xf0\x9f\x94\xb5'
+p1487
+S' circle '
+p1488
+sS'\xf0\x9f\x94\xb4'
+p1489
+g1488
+sS'\xf0\x9f\x94\xb3'
+p1490
+S' square button '
+p1491
+sS'\xf0\x9f\x94\xb2'
+p1492
+g1491
+sS'\xf0\x9f\x94\xb1'
+p1493
+S' trident emblem '
+p1494
+sS'\xf0\x9f\x94\xb0'
+p1495
+S' japanese beginner '
+p1496
+sS'\xf0\x9f\x94\x8f'
+p1497
+S' lock ink pen '
+p1498
+sS'\xf0\x9f\x94\x8e'
+p1499
+S' right magnifying glass '
+p1500
+sS'\xf0\x9f\x94\x8d'
+p1501
+S' left magnifying glass '
+p1502
+sS'\xf0\x9f\x94\x8c'
+p1503
+S' electric plug '
+p1504
+sS'\xf0\x9f\x94\x8b'
+p1505
+S' battery '
+p1506
+sS'\xf0\x9f\x94\x8a'
+p1507
+S' speaker three sound waves '
+p1508
+sS'\xf0\x9f\x94\x89'
+p1509
+S' speaker one sound wave '
+p1510
+sS'\xf0\x9f\x94\x87'
+p1511
+S' speaker cancellation stroke '
+p1512
+sS'\xf0\x9f\x94\x86'
+p1513
+S' high brightness '
+p1514
+sS'\xf0\x9f\x94\x85'
+p1515
+S' low brightness '
+p1516
+sS'\xf0\x9f\x94\x84'
+p1517
+S' reverse circle arrows '
+p1518
+sS'\xf0\x9f\x94\x83'
+p1519
+S' circle arrows '
+p1520
+sS'\xf0\x9f\x94\x82'
+p1521
+g1520
+sS'\xf0\x9f\x94\x81'
+p1522
+g1520
+sS'\xf0\x9f\x94\x80'
+p1523
+S' twisted right arrows '
+p1524
+sS'\xf0\x9f\x94\x9f'
+p1525
+S' keycap ten '
+p1526
+sS'\xf0\x9f\x94\x9e'
+p1527
+S' no one under eighteen '
+p1528
+sS'\xf0\x9f\x94\x9d'
+p1529
+S' top up arrow above '
+p1530
+sS'\xf0\x9f\x94\x9c'
+p1531
+S' soon right arrow above '
+p1532
+sS'\xf0\x9f\x94\x9b'
+p1533
+S' on ! mark left right arrow above '
+p1534
+sS'\xf0\x9f\x94\x9a'
+p1535
+S' end leftwards arrow above '
+p1536
+sS'\xf0\x9f\x94\x99'
+p1537
+S' back leftwards arrow above '
+p1538
+sS'\xf0\x9f\x94\x98'
+p1539
+S' radio button '
+p1540
+sS'\xf0\x9f\x94\x97'
+p1541
+S' link '
+p1542
+sS'\xf0\x9f\x94\x96'
+p1543
+S' bookmark '
+p1544
+sS'\xf0\x9f\x94\x95'
+p1545
+S' bell cancellation stroke '
+p1546
+sS'\xf0\x9f\x94\x94'
+p1547
+S' bell '
+p1548
+sS'\xf0\x9f\x94\x93'
+p1549
+S' open lock '
+p1550
+sS'\xf0\x9f\x94\x92'
+p1551
+S' lock '
+p1552
+sS'\xf0\x9f\x94\x91'
+p1553
+S' key '
+p1554
+sS'\xf0\x9f\x94\x90'
+p1555
+S' closed lock key '
+p1556
+sS'\xee\x90\x83'
+p1557
+g273
+sS'\xf3\xbe\x94\x91'
+p1558
+g1403
+sS'2\xe2\x83\xa3'
+p1559
+S' two '
+p1560
+sS'\xf0\x9f\x86\x8e'
+p1561
+S' negative ab '
+p1562
+sS'\xf0\x9f\x86\x95'
+p1563
+S' new '
+p1564
+sS'\xf0\x9f\x86\x94'
+p1565
+S' id '
+p1566
+sS'\xf0\x9f\x86\x97'
+p1567
+g69
+sS'\xf0\x9f\x86\x96'
+p1568
+S' ng '
+p1569
+sS'\xf0\x9f\x86\x91'
+p1570
+S' cl '
+p1571
+sS'\xf0\x9f\x86\x93'
+p1572
+S' free '
+p1573
+sS'\xf0\x9f\x86\x92'
+p1574
+S' cool '
+p1575
+sS'\xf0\x9f\x86\x99'
+p1576
+S' up ! '
+p1577
+sS'\xf0\x9f\x86\x98'
+p1578
+S' sos '
+p1579
+sS'\xf0\x9f\x86\x9a'
+p1580
+S' vs '
+p1581
+sS'\xf0\x9f\x89\x90'
+p1582
+S' advantage '
+p1583
+sS'\xf0\x9f\x89\x91'
+p1584
+S' accept '
+p1585
+sS'\xf0\x9f\x87\xaf\xf0\x9f\x87\xb5'
+p1586
+S' country jp '
+p1587
+sS'\xe2\x9d\xa4'
+p1588
+S' heavy black heart '
+p1589
+sS'\xe2\x9d\x93'
+p1590
+S' black ? mark '
+p1591
+sS'\xf0\x9f\x87\xba\xf0\x9f\x87\xb8'
+p1592
+S' country us '
+p1593
+sS'\xe2\x9d\x97'
+p1594
+S' heavy ! mark '
+p1595
+sS'\xe2\x9d\x94'
+p1596
+S' white ? mark '
+p1597
+sS'\xe2\x9d\x95'
+p1598
+S' white ! mark '
+p1599
+sS'\xe2\x9d\x87'
+p1600
+S' sparkle '
+p1601
+sS'\xe2\x9d\x84'
+p1602
+S' snowflake '
+p1603
+sS'5\xe2\x83\xa3'
+p1604
+S' five '
+p1605
+sS'\xe2\x9d\x8e'
+p1606
+S' negative squared cross mark '
+p1607
+sS'\xe2\x9d\x8c'
+p1608
+S' cross mark '
+p1609
+sS'\xe2\xa4\xb5'
+p1610
+S' arrow right curving down '
+p1611
+sS'\xe2\xa4\xb4'
+p1612
+S' arrow right curving up '
+p1613
+sS'\xe3\x80\xbd'
+p1614
+S' part alternation mark '
+p1615
+sS'\xe3\x80\xb0'
+p1616
+S' wavy dash '
+p1617
+sS'^_^'
+p1618
+S' smile '
+p1619
+sS'\xd0\x90'
+p1620
+g8
+sS'\xf0\x9f\x88\xaf'
+p1621
+S' cjk '
+p1622
+sS'\xf0\x9f\x88\xba'
+p1623
+g1622
+sS'\xf0\x9f\x88\xb9'
+p1624
+g1622
+sS'\xf0\x9f\x88\xb8'
+p1625
+g1622
+sS'\xf0\x9f\x88\xb3'
+p1626
+g1622
+sS'\xf0\x9f\x88\xb2'
+p1627
+g1622
+sS'\xf0\x9f\x88\xb7'
+p1628
+g1622
+sS'\xf0\x9f\x88\xb6'
+p1629
+g1622
+sS'\xf0\x9f\x88\xb5'
+p1630
+g1622
+sS'\xf0\x9f\x88\xb4'
+p1631
+g1622
+sS'\xf0\x9f\x88\x82'
+p1632
+S' katakana sa '
+p1633
+sS'\xf0\x9f\x88\x81'
+p1634
+S' katakana koko '
+p1635
+sS'\xf0\x9f\x88\x9a'
+p1636
+g1622
+sS'\xf0\x9f\x87\xa9\xf0\x9f\x87\xaa'
+p1637
+S' country de '
+p1638
+sS'\xc2\xa3'
+p1639
+g1210
+sS'\xc2\xae'
+p1640
+S' registered '
+p1641
+sS'\xc2\xa9'
+p1642
+S' copyright '
+p1643
+sS'\xc2\xb4'
+p1644
+S' '
+p1645
+sS'\xc2\xb0'
+p1646
+S' degree '
+p1647
+sS'\xf0\x9f\x97\xbb'
+p1648
+S' mount fuji '
+p1649
+sS'\xf0\x9f\x97\xbe'
+p1650
+S' japan '
+p1651
+sS'\xf0\x9f\x97\xbf'
+p1652
+S' moyai '
+p1653
+sS'\xf0\x9f\x97\xbc'
+p1654
+S' tokyo tower '
+p1655
+sS'\xf0\x9f\x97\xbd'
+p1656
+S' statue of liberty '
+p1657
+sS'9\xe2\x83\xa3'
+p1658
+S' nine '
+p1659
+sS'\xe2\x80\xbc'
+p1660
+S' ! mark repeat '
+p1661
+sS'\xe2\x80\xa2'
+p1662
+g26
+sS'\xe2\x80\xa6'
+p1663
+S' horizontal ellipsis '
+p1664
+sS'\xe2\x8b\x98'
+p1665
+S' from '
+p1666
+sS'\xe2\x8b\x99'
+p1667
+S' to '
+p1668
+sS'\xe2\x80\x94'
+p1669
+g1645
+sS'\xe2\x80\x99'
+p1670
+g1645
+sS'\xe2\x80\x9d'
+p1671
+S' " '
+p1672
+sS'\xe2\x80\x9c'
+p1673
+g1672
+s.
