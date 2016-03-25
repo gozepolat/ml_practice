@@ -130,8 +130,8 @@ def tokenize(tweet, twt=TweetTokenizer(reduce_len=True)):
     :param twt: tweet tokenizer
     :return: list of tokenized words
     """
-    decoded = unicode(tweet)  # .decode("utf-8")
-    decoded = prep_tweet(decoded, segment=True)
+    # decoded = unicode(tweet)  # .decode("utf-8")
+    decoded = prep_tweet(tweet, segment=True)
     tokenized = twt.tokenize(decoded)
     return tokenized
 
@@ -147,7 +147,19 @@ def stem(tokenized, stemmer=nltk.stem.PorterStemmer()):
     return stemmed
 
 
-def construct_unsupervised_dataset(path_list):
+def (path):
+    """ dodo """
+    lines=[]
+    with open(path, "r") as f:
+        for line in f:
+            tokenized = tokenize(line)
+            lines.append(stem(tokenized))
+    with open(path, "w") as f:
+        for line in lines:
+            " ".line
+
+
+'''def construct_unsupervised_dataset(path_list):
     with io.read("../data/unsupervised.csv", "w", encoding="utf-8-sig") as dataset:
         for p in path_list:
             with io.read_csv(p, "r", encoding="utf-8-sig") as csv:
@@ -158,7 +170,7 @@ def construct_unsupervised_dataset(path_list):
                     dataset.write(unicode("\n"))
 
 
-'''construct_unsupervised_dataset(["/home/agp/Downloads/pos_emotions_train.csv", "/home/agp/Downloads/neg_emotions_train.csv",
+construct_unsupervised_dataset(["/home/agp/Downloads/pos_emotions_train.csv", "/home/agp/Downloads/neg_emotions_train.csv",
      "/home/agp/Downloads/pos_emotions_test.csv", "/home/agp/Downloads/neg_emotions_test.csv"])
 
 with io.open("../data/unsupervised.csv", "r", encoding="utf-8-sig") as dataset:
