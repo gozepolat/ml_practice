@@ -1,6 +1,7 @@
 import nltk
+import os
 from prep import morph
-import pickle
+from six.moves import cPickle
 from prep import freq
 
 # nltk.download("punkt")
@@ -9,14 +10,29 @@ from prep import freq
 # nltk.download("twitter_samples")
 
 # courtesy to http://apps.timwhitlock.info/emoji/tables/unicode
-emoji_dict = pickle.load("data/emoji_dict.pkl")  # courtesy to https://github.com/fionapigott/emoji-counter/blob/master/emoji_dict.py
+emoji_dict = cPickle.load("data/emoji_dict.pkl")
 
-# fix the unicode chars and emojis in the data, labeling and endline issues
-morph.fix("data/pos_emotions_train.csv", 1, emoji_dict)
-morph.fix("data/neg_emotions_train.csv", 1, emoji_dict)
-morph.fix("data/neg_emotions_test.csv", 0, emoji_dict)
-morph.fix("data/pos_emotions_test.csv", 0, emoji_dict)
+# fix most of the unicode chars and emojis in the data, as well as labeling and endline issues
+if not os.path.isfile("data/pos_emotions_train_emoji_fixed.csv"):
+    pos_train = morph.fix("data/pos_emotions_train.csv", 1, emoji_dict)
+if not os.path.isfile("data/neg_emotions_train_emoji_fixed.csv", ):
+    neg_train = morph.fix("data/neg_emotions_train.csv", 1, emoji_dict)
+if not os.path.isfile("data/neg_emotions_test_emoji_fixed.csv"):
+    neg_test = morph.fix("data/neg_emotions_test.csv", 0, emoji_dict)
+if not os.path.isfile("data/pos_emotions_test_emoji_fixed.csv"):
+    pos_test = morph.fix("data/pos_emotions_test.csv", 0, emoji_dict)
+
+# balance the "Other" class and increase the size of the neg/pos training datasets by ~1000 ;)
+
 
 
 # tokenize and stem
-morph.tokenize_csv("data/pos_emotions_train.csv", emoji_dict)
+for f in [pos_train,neg_train,neg_test,pos_test]:
+    morph.tokenize_csv(f, emoji_dict)
+
+# get word frequencies, and replace single occurrences with UNK
+
+# construct frequency dictionary
+
+
+

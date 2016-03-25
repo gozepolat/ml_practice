@@ -8,13 +8,14 @@ import io
 import pandas as pd
 
 
-def segment_hashtag(x):
-    if hasattr(x, "group"):
-        x = x.group()[1:]
+def segment_hashtag(h):
+    """segment the words inside the hashtag h, discard non alphanum chars"""
+    if hasattr(h, "group"):
+        h = h.group()[1:]
     else:
-        x = x[1:]
-    # print(x, " hashtag " + wordsegment.segment(x) + " . ")
-    return " hashtag " + " ".join(wordsegment.segment(x)) + " , "
+        h = h[1:]
+    # print(h, " hashtag " + wordsegment.segment(h) + " . ")
+    return " hashtag " + " ".join(wordsegment.segment(h)) + " , "
 
 
 def ends_with_label(line):
@@ -34,44 +35,58 @@ def ends_with_label(line):
 
 
 def fix_csv(path, k):
-    """concatenate the lines without labels to one with a label"""
-    with io.open(path, "r", encoding="utf-8-sig") as csv, io.open(path[0:path.rfind(".")] + "_fixed.csv", "w",
-                                                                  encoding="utf-8-sig") as fixed_csv:
-        fixed_line = u""
+    """concatenate the lines without labels to one with a label
+    :param path: csv file path to open
+    :param k: indicator of three possibilities, -1 not a full sample, 0 no label (test), 1 with a label (train)
+    :return: fixed csv file path
+    """
+    fixed_name = path[0:path.rfind(".")] + "_fixed.csv"
+    with io.open(path, "r") as csv, io.open(fixed_name, "w") as fixed_csv:
+        fixed_line = ""
         in_quote = False
         for line in csv:
-            if u"\"" in line or u"\'" in line:
+            if "\"" in line or "\'" in line:
                 j = 0
                 for k in line:
-                    if k == u"\"" or k == u"\'":
+                    if k == "\"" or k == "\'":
                         j += 1
                 if j % 2 == 1:
                     in_quote = in_quote is False  # flip the value
             if ends_with_label(line) == k and not in_quote:
                 fixed_csv.write(fixed_line + line)
-                fixed_line = u""
+                fixed_line = ""
             else:
-                fixed_line += line.strip() + u" "
+                fixed_line += line.strip() + " "
+    return fixed_name
 
 
 def fix_emoji(path, emoji):
     lines = []
     emoji_path = path[0:path.rfind(".")] + "_emoji.csv"
-    with io.open(path, "r", encoding="utf-8-sig") as csv, io.open(emoji_path, "w", encoding="utf-8-sig") as emoji_csv:
-        for line in csv:
-            lines.append(line.encode("utf-8-sig"))
-        # replace emojis with words
-        for i in range(len(lines)):
-            for key in emoji.keys():
-                lines[i] = lines[i].replace(key, emoji[key])
-        for line in lines:
-            emoji_csv.write(line)
-    return emoji_path
+    try:
+        with io.open(path, "r", encoding="utf-8-sig") as csv, io.open(emoji_path, "w") as emoji_csv:
+            for line in csv:
+                lines.append(line.encode("utf-8-sig"))
+            # replace emojis with words
+            for i in range(len(lines)):
+                for key in emoji.keys():
+                    lines[i] = lines[i].replace(key, emoji[key])
+            for line in lines:
+                emoji_csv.write(line.decode('unicode_escape').encode('ascii', 'ignore'))
+    except Exception as e:
+        print("Can not preprocess the emojis in the file! There was an exception:")
+        print(e)
+        import traceback
+        print(traceback.format_exc())
+        emoji_path = path
+    finally:
+        return emoji_path
 
 
 def fix(path, k, emoji):
     emoji_path = fix_emoji(path, emoji)
-    fix_csv(emoji_path, k)
+    if emoji_path is not None:
+        return fix_csv(emoji_path, k)
 
 
 def prep_tweet(tweet, segment=False):
