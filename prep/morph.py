@@ -5,6 +5,7 @@ from nltk.tokenize import TweetTokenizer
 import wordsegment
 import re
 import io
+import os
 import pandas as pd
 
 
@@ -23,12 +24,14 @@ def ends_with_label(line):
     :param line: it may be encoded in utf-8,
     :return: -1 not a full sample, 0 no label, 1 with a label
     """
-    ix = line.rfind(u",")
-    if ix < 0:
+    if line is None:
+        return -1
+    ix = line.rfind(",")
+    if ix < 0 or len(line.strip()) < 2:  # discard empty lines
         return -1
     if ix + 1 >= len(line):
         return 0
-    if line[ix + 1].isupper() and u" " not in line[ix + 1:]:
+    if line[ix + 1].isupper() and " " not in line[ix + 1:]:
         if ix + 2 < len(line) and line[ix + 2:].islower():
             return 1
     return 0
@@ -41,14 +44,14 @@ def fix_csv(path, k):
     :return: fixed csv file path
     """
     fixed_name = path[0:path.rfind(".")] + "_fixed.csv"
-    with io.open(path, "r") as csv, io.open(fixed_name, "w") as fixed_csv:
+    with open(path, "r") as csv, open(fixed_name, "w") as fixed_csv:
         fixed_line = ""
         in_quote = False
         for line in csv:
-            if "\"" in line or "\'" in line:
+            if "\"" in line:
                 j = 0
-                for k in line:
-                    if k == "\"" or k == "\'":
+                for m in line:
+                    if m == "\"":
                         j += 1
                 if j % 2 == 1:
                     in_quote = in_quote is False  # flip the value
@@ -57,22 +60,31 @@ def fix_csv(path, k):
                 fixed_line = ""
             else:
                 fixed_line += line.strip() + " "
+                # print(fixed_line)
     return fixed_name
 
 
 def fix_emoji(path, emoji):
     lines = []
     emoji_path = path[0:path.rfind(".")] + "_emoji.csv"
+    if os.path.isfile(emoji_path):
+        print("Using the previously created emoji free file:%s" % emoji_path)
+        return emoji_path
     try:
-        with io.open(path, "r", encoding="utf-8-sig") as csv, io.open(emoji_path, "w") as emoji_csv:
+        with io.open(path, "r", encoding="utf-8-sig") as csv:
+            not_first = False
             for line in csv:
-                lines.append(line.encode("utf-8-sig"))
+                if not_first:
+                    lines.append(line.encode("utf-8-sig"))
+                else:  # Skip the first line
+                    not_first = True
+        with open(emoji_path, "w") as emoji_csv:
             # replace emojis with words
             for i in range(len(lines)):
                 for key in emoji.keys():
-                    lines[i] = lines[i].replace(key, emoji[key])
+                    lines[i] = lines[i].replace(key, emoji[key]).decode('unicode_escape').encode('ascii', 'ignore')
             for line in lines:
-                emoji_csv.write(line.decode('unicode_escape').encode('ascii', 'ignore'))
+                emoji_csv.write(line)
     except Exception as e:
         print("Can not preprocess the emojis in the file! There was an exception:")
         print(e)
@@ -85,6 +97,7 @@ def fix_emoji(path, emoji):
 
 def fix(path, k, emoji):
     emoji_path = fix_emoji(path, emoji)
+    print("Replaced emojis with word descriptions. Fixing the labeling issues now..")
     if emoji_path is not None:
         return fix_csv(emoji_path, k)
 
@@ -94,7 +107,7 @@ def prep_tweet(tweet, segment=False):
     :param tweet: a single word from the tweet
     :return: tagged/preprocessed version or the tweet itself
     """
-    flags = re.VERBOSE | re.DOTALL | re.LOCALE | re.U
+    flags = re.VERBOSE | re.DOTALL | re.LOCALE
     eyes = r"[8:=;\^]"
     nose = r"['`\-]?"
     tweet = re.sub(r",", " , ", tweet, flags)
@@ -110,7 +123,7 @@ def prep_tweet(tweet, segment=False):
     tweet = re.sub(r"[-+]?[.\d]*[\d]+[:,.\d]*", " number ", tweet, flags)
     tweet = re.sub(r"\*([^\*]+)\*", r"\1", tweet, flags)
     tweet = re.sub(r"#", " #", tweet, flags)
-    tweet = re.sub(r"([A-Z^a-z]+)", r"\1 shout ", tweet, flags)
+    #tweet = re.sub(r"([^a-z ]+)", r"\1 shout ", tweet, flags)
     tweet = re.sub(r"([!?.]){2,}", r"\1 repeat ", tweet, flags)
     tweet = re.sub(r"([aoe]*h[aoe]+){2,}", " laugh ", tweet, flags | re.IGNORECASE)
     tweet = re.sub(r"<+-+", " from ", tweet, flags)
@@ -123,7 +136,7 @@ def prep_tweet(tweet, segment=False):
     return tweet
 
 
-def tokenize(tweet, twt=TweetTokenizer(reduce_len=True)):
+def tokenize(tweet, twt=TweetTokenizer(reduce_len=True), lower=True):
     """convert given string into a list of tokenized words
 
     :param tweet: tweet string
@@ -132,7 +145,10 @@ def tokenize(tweet, twt=TweetTokenizer(reduce_len=True)):
     """
     # decoded = unicode(tweet)  # .decode("utf-8")
     decoded = prep_tweet(tweet, segment=True)
-    tokenized = twt.tokenize(decoded)
+    if lower:
+        tokenized = twt.tokenize(decoded.lower())
+    else:
+        tokenized = twt.tokenize(decoded)
     return tokenized
 
 
@@ -147,20 +163,8 @@ def stem(tokenized, stemmer=nltk.stem.PorterStemmer()):
     return stemmed
 
 
-def (path):
-    """ dodo """
-    lines=[]
-    with open(path, "r") as f:
-        for line in f:
-            tokenized = tokenize(line)
-            lines.append(stem(tokenized))
-    with open(path, "w") as f:
-        for line in lines:
-            " ".line
-
-
 '''def construct_unsupervised_dataset(path_list):
-    with io.read("../data/unsupervised.csv", "w", encoding="utf-8-sig") as dataset:
+    with io.open("../data/unsupervised.csv", "w", encoding="utf-8-sig") as dataset:
         for p in path_list:
             with io.read_csv(p, "r", encoding="utf-8-sig") as csv:
                 for line in csv:
