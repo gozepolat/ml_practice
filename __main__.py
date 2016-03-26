@@ -31,6 +31,7 @@ else:
     neg_train = "data/neg_emotions_train_emoji_fixed.csv"
     neg_test = "data/neg_emotions_test_emoji_fixed.csv"
     pos_test = "data/pos_emotions_test_emoji_fixed.csv"
+
     # fix most of the unicode chars and emojis in the data, fix labeling and endline issues
     if not os.path.isfile("data/pos_emotions_train_emoji_fixed.csv"):
         print("fixing pos_emotions_train..")
@@ -53,8 +54,9 @@ else:
     print("tokenization and stemming phase..")
     for path in [pos_test, neg_test, pos_train, neg_train]:  # careful! do not change the order!
         print(path)
-        print(ix)
-        ix += util.create_corpus(path, corpus, lower=True)
+        n = util.create_corpus(path, corpus, lower=True)
+        print(n)
+        ix += n
         file_ix.append(ix)
 
     # generate a word frequency dictionary from the corpus
@@ -78,15 +80,19 @@ else:
     cPickle.dump(neg_test, open("data/neg_test.pkl", "w"))
 
 print(len(pos))
+max_words_in_sentence = max([len(p) for p in pos])
+print(max_words_in_sentence)
 print(word_int_map.left_to_right.items())
 # split into X (features = int) and y (class labels = int) and convert y into one hot encoding,
-pos_X_train, pos_X_test, pos_y_train, pos_y_test = util.reshape_train(pos, [word_int_map["joy"],109877, # word_int_map["desire"]
+pos_X_train, pos_X_test, pos_y_train, pos_y_test = util.reshape_train(pos, [word_int_map["joy"], word_int_map["desir"],
                                                                             word_int_map["love"],
                                                                             word_int_map["other"]], test_size=0.2)
 # train the dataset on a cnn / lstm architecture
-pos_model = models.construct_cnn_lstm(nb_class=4)
-score, acc = models.train_model(pos_model, pos_X_train, pos_X_test, pos_y_train, pos_y_test, nb_epoch=2,
-                                batch_size=30, patience=2)
+pos_model = models.construct_cnn_lstm(nb_class=4, stateful=True, max_words_in_sentence=max_words_in_sentence)
+score, acc = models.train_model(pos_model, pos_X_train, pos_X_test, pos_y_train, pos_y_test, nb_epoch=6,
+                                batch_size=30, max_words_in_sentence=max_words_in_sentence)
+
+# use the same embedding layer for neg?
 print(score, acc)
 """
 # divide the data into labels (y_*) and features (X_*)

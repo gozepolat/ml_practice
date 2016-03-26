@@ -2,7 +2,7 @@ installation:
 
 sudo -H pip install sklearn
 sudo -H pip install six
-# sudo -H pip install nltk
+sudo -H pip install nltk
 sudo -H pip install wordsegment
 # sudo -H pip install pandas
 
