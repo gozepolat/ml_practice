@@ -61,7 +61,7 @@ def fix_csv(path, k):
             else:
                 fixed_line += line.strip() + " "
                 # print(fixed_line)
-    print(fixed_line)
+    #print(fixed_line)
     return fixed_name
 
 

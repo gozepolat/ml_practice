@@ -16,3 +16,9 @@ sudo -H pip install git+git://github.com/Theano/Theano.git
 # install keras
 sudo -H pip install keras
     
+
+
+run:
+THEANO_FLAGS=device=gpuN,floatX=float32 python __main__.py  # where gpuN should be replaced by a real device e.g. gpu0
+or alternatively, run on cpu:
+python __main__.py

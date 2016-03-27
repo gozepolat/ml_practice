@@ -1,8 +1,10 @@
 import numpy as np
-from prep import morph
-from sklearn import preprocessing
-from sklearn import cross_validation
+
 import nltk
+from sklearn import cross_validation
+from sklearn import preprocessing
+
+from prep import morph
 
 np.random.seed(27)  # for reproducibility
 
@@ -52,27 +54,6 @@ def reshape_train(train, classes, test_size, random_state=27):
     y = preprocessing.label_binarize(raw_y, classes=classes)
     X_tr, X_test, y_tr, y_test = cross_validation.train_test_split(X, y, test_size=test_size, random_state=random_state)
     return X_tr, X_test, y_tr, y_test
-
-
-def exchange_data(list1, list2, cmp_label, n1=1000, n2=1000):
-    balanced_list1 = []
-    balanced_list2 = []
-    ctr1 = 0
-    ctr2 = 0
-    for l1, l2 in zip(list1, list2):
-        if len(l1) > 1 and l1[-1] != cmp_label:
-            if np.random.uniform(0, 1) < 0.3 and ctr2 < n2:
-                balanced_list2.append(l1[:-1] + [cmp_label])
-                ctr2 += 1
-        if len(l2) > 1 and l2[-1] != cmp_label:
-            if np.random.uniform(0, 1) < 0.3 and ctr1 < n1:
-                balanced_list1.append(l2[:-1] + [cmp_label])
-                ctr1 += 1
-        balanced_list1.append(l1)
-        balanced_list2.append(l2)
-    np.random.shuffle(balanced_list1)
-    np.random.shuffle(balanced_list2)
-    return balanced_list1, balanced_list2
 
 
 def create_corpus(path, corpus=[], lower=True):

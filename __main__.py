@@ -1,8 +1,9 @@
-import nltk
 import os
-from prep import morph, util
-from six.moves import cPickle
 from dl import models
+
+
+
+import cPickle
 
 """from sklearn import cross_validation
 
@@ -16,100 +17,87 @@ from sklearn.preprocessing import StandardScaler, Imputer
 # nltk.download("words")
 # nltk.download("stopwords")
 # nltk.download("twitter_samples")
-if os.path.isfile("data/pos.pkl") and os.path.isfile("data/pos.pkl"):
-    print("directly loading the preprocessed data")
-    word_int_map = cPickle.load(open("data/word_int_map.pkl", "r"))
-    pos = cPickle.load(open("data/pos.pkl", "r"))
-    neg = cPickle.load(open("data/neg.pkl", "r"))
-    pos_test = cPickle.load(open("data/pos_test.pkl", "r"))
-    neg_test = cPickle.load(open("data/neg_test.pkl", "r"))
-else:
-    # courtesy to http://apps.timwhitlock.info/emoji/tables/unicode
-    emoji_dict = cPickle.load(open("data/emoji_dict.pkl", "r"))
+""" # if all.pkl does not exist
+from prep import dataset
+if not os.path.isfile("data/all.pkl"):
+    dataset.dump_all()
+# """
 
-    pos_train = "data/pos_emotions_train_emoji_fixed.csv"
-    neg_train = "data/neg_emotions_train_emoji_fixed.csv"
-    neg_test = "data/neg_emotions_test_emoji_fixed.csv"
-    pos_test = "data/pos_emotions_test_emoji_fixed.csv"
+if __name__ == "__main__":
+    (pre_y, pre_X, pos_neg_y, pos_neg_X, pos_X_train, pos_X_test, pos_y_train, pos_y_test, neg_X_train, neg_X_test,
+     neg_y_train, neg_y_test, max_words_in_sentence) = cPickle.load(open("data/all.pkl","r"))
 
-    # fix most of the unicode chars and emojis in the data, fix labeling and endline issues
-    if not os.path.isfile("data/pos_emotions_train_emoji_fixed.csv"):
-        print("fixing pos_emotions_train..")
-        pos_train = morph.fix("data/pos_emotions_train.csv", 1, emoji_dict)
-    if not os.path.isfile("data/neg_emotions_train_emoji_fixed.csv", ):
-        print("fixing neg_emotions_train..")
-        neg_train = morph.fix("data/neg_emotions_train.csv", 1, emoji_dict)
-    if not os.path.isfile("data/neg_emotions_test_emoji_fixed.csv"):
-        print("fixing neg_emotions_test..")
-        neg_test = morph.fix("data/neg_emotions_test.csv", 0, emoji_dict)
-    if not os.path.isfile("data/pos_emotions_test_emoji_fixed.csv"):
-        print("fixing pos_emotions_test..")
-        pos_test = morph.fix("data/pos_emotions_test.csv", 0, emoji_dict)
 
-    # tokenize, stem, and generate a corpus from the whole data
-    corpus = []
-    word_freq = {}
-    file_ix = [0]  # indicates w
-    ix = 0
-    print("tokenization and stemming phase..")
-    for path in [pos_test, neg_test, pos_train, neg_train]:  # careful! do not change the order!
-        print(path)
-        n = util.create_corpus(path, corpus, lower=True)
-        print(n)
-        ix += n
-        file_ix.append(ix)
+    def train(initial_model, X_train, X_test, y_train, y_test, nb_epoch=16,
+              batch_size=30, max_words=max_words_in_sentence,evaluate=True):
+        return models.train_model(initial_model, X_train, X_test, y_train, y_test, nb_epoch=nb_epoch,
+                                  batch_size=batch_size, max_words_in_sentence=max_words, evaluate=evaluate)
+    # pretraining
+    pre_model = models.construct_pre_model(max_words_in_sentence=max_words_in_sentence)
 
-    # generate a word frequency dictionary from the corpus
-    util.freq_corpus(corpus, word_freq)
+    if not os.path.isfile("data/pos_neg_model.hdf5"):
+        if not os.path.isfile("data/pre_model.hdf5"):  # train valid/invalid model
+            split_ix = int(len(pre_X) * (1 - 0.2))
+            score, acc = train(pre_model, pre_X[:split_ix], pre_X[split_ix:], pre_y[:split_ix], pre_y[split_ix:], nb_epoch=1)
+            pre_model.save_weights("data/pre_model.hdf5", overwrite=True)
+            print("(pre)training of valid/invalid set is completed with validation loss and accuracy", (score, acc))
+        else:
+            # print("loading the pretrained embedding layer weights")
+            pre_model.load_weights("data/pre_model.hdf5")
+        split_ix = int(len(pos_neg_X) * (1 - 0.2))
+        score, acc = train(pre_model, pos_neg_X[:split_ix], pos_neg_X[split_ix:], pos_neg_y[:split_ix],
+                                    pos_neg_y[split_ix:], nb_epoch=2)
+        pre_model.save_weights("data/pos_neg_model.hdf5", overwrite=True)
+        print("(pre)training of pos/neg set is completed with validation loss and accuracy", (score, acc))
+        # print("(this model can be directly used for positive vs negative sentiment classification)")
+    else:
+        print("end of pretraining.. loading the pretrained embedding layer weights")
+        pre_model.load_weights("data/pos_neg_model.hdf5")
+    #print("using the word embeddings learned from pretraining for classification tasks..")
+    #skf = StratifiedKFold(labels, n_folds=n_folds, shuffle=True)
+    #print("starting cross-validation")
 
-    # create a mapping between integers and words
-    word_int_map = util.word2int(word_freq)  # bidirectional map, unk words <=> 2, 0 & 1 are reserved
 
-    # create an int corpus, by replacing the words with integers
-    int_corpus = util.word_corpus2int_corpus(corpus, word_int_map)
+    # train the dataset on a cnn / lstm architecture
+    pos_model = models.construct_cnn_lstm(nb_class=4, stateful=False, convolutional=True,
+                                          max_words_in_sentence=max_words_in_sentence,
+                                          pretrained_embedding=pre_model.layers[0])
+    score, acc = train(pos_model, pos_X_train, pos_X_test, pos_y_train, pos_y_test, nb_epoch=30)
 
-    del corpus  # no need for the word version of the corpus anymore
-    pos_test = int_corpus[0:file_ix[1]]
-    neg_test = int_corpus[file_ix[1]:file_ix[2]]
-    # balance the "Other" class and increase the size of the neg/pos training datasets by ~1000 ;)
-    pos, neg = util.exchange_data(int_corpus[file_ix[2]:file_ix[3]], int_corpus[file_ix[3]:], word_int_map["other"])
-    cPickle.dump(pos, open("data/pos.pkl", "w"))
-    cPickle.dump(neg, open("data/neg.pkl", "w"))
-    cPickle.dump(word_int_map, open("data/word_int_map.pkl", "w"))
-    cPickle.dump(pos_test, open("data/pos_test.pkl", "w"))
-    cPickle.dump(neg_test, open("data/neg_test.pkl", "w"))
+    # use the same embedding layer for neg?
+    print("positive model is trained with validation loss and accuracy", (score, acc))
 
-print(len(pos))
-max_words_in_sentence = max([len(p) for p in pos])
-print(max_words_in_sentence)
-print(word_int_map.left_to_right.items())
-# split into X (features = int) and y (class labels = int) and convert y into one hot encoding,
-pos_X_train, pos_X_test, pos_y_train, pos_y_test = util.reshape_train(pos, [word_int_map["joy"], word_int_map["desir"],
-                                                                            word_int_map["love"],
-                                                                            word_int_map["other"]], test_size=0.2)
-# train the dataset on a cnn / lstm architecture
-pos_model = models.construct_cnn_lstm(nb_class=4, stateful=True, max_words_in_sentence=max_words_in_sentence)
-score, acc = models.train_model(pos_model, pos_X_train, pos_X_test, pos_y_train, pos_y_test, nb_epoch=6,
-                                batch_size=30, max_words_in_sentence=max_words_in_sentence)
+    neg_model = models.construct_cnn_lstm(nb_class=5, stateful=False, convolutional=True,
+                                          max_words_in_sentence=max_words_in_sentence,
+                                          pretrained_embedding=pre_model.layers[0])
+    score, acc = models.train_model(neg_model, neg_X_train, neg_X_test, neg_y_train, neg_y_test, nb_epoch=30)
 
-# use the same embedding layer for neg?
-print(score, acc)
+    # use the same embedding layer for neg?
+    print("negative model is trained with validation loss and accuracy", (score, acc))
+
+    from sklearn.cross_validation import StratifiedKFold
+    # cross-validation
+    n_folds = 10
+    # pos model
+    pos_y=pos_y_train+pos_y_test
+    pos_X=pos_X_train+pos_X_test
+    skf = StratifiedKFold(pos_y, n_folds=n_folds, shuffle=False, random_state=None)  # already shuffled
+    # precision, recall, f1-score and support on the test data for each class should be recorded and provided, as well as the confusion matrix.
+    for i, (train_ix, test_ix) in enumerate(skf):
+            print ("Cross-validation fold: %d/%d"%(i+1, n_folds))
+            pos_model = None # Clearing the NN.
+            pos_model = models.construct_cnn_lstm(nb_class=4, stateful=False, convolutional=True,
+                                          max_words_in_sentence=max_words_in_sentence,
+                                          pretrained_embedding=pre_model.layers[0])
+            X_train, X_test = pos_X[train_ix], pos_X[test_ix]
+            y_train, y_test = pos_y[train_ix], pos_y[test_ix]
+            train(model, data[train], labels[train], data[test], labels[test),evaluate=False)
+
+
+
+
+
 """
-# divide the data into labels (y_*) and features (X_*)
-X_train=None
-y_train=None
-with open(pos_train,"r") as f:
-    train=[line.strip() for line in f]
-
-
-#
-
-# get word frequencies, and replace single occurrences with UNK
-
-# construct frequency dictionary
-
-
-
 def load_data():
     # load your data using this function
 
@@ -132,20 +120,4 @@ if __name__ == "__main__":
             model = construct_cnn_lstm()
             train_and_evaluate_model(model, data[train], labels[train], data[test], labels[test))
 
-"""
-
-"""
-pos_X_train = []
-pos_y_train = []
-pos_X_test = []
-pos_y_test = []
-neg_X_train = []
-neg_y_train = []
-neg_X_test = []
-neg_y_test = []
-
-X_train = []
-y_train = []
-X_test = []
-y_test = []
 """
