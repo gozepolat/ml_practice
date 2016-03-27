@@ -64,12 +64,16 @@ def construct_cnn_lstm(stateful=False, convolutional=True, loss='categorical_cro
     return model
 
 
-def train_model(model, X_train, X_test, y_train, y_test, max_words_in_sentence=100, nb_epoch=2, batch_size=30, evaluate=True):
+def train_model(model, X_train, y_train, X_test=None, y_test=None, max_words_in_sentence=100, nb_epoch=2, batch_size=30,
+                evaluate=True):
     X_train = sequence.pad_sequences(X_train, maxlen=max_words_in_sentence)
-    X_test = sequence.pad_sequences(X_test, maxlen=max_words_in_sentence)
-    model.fit(X_train, y_train, batch_size=batch_size, nb_epoch=nb_epoch,
+    if X_test is not None and y_test is not None:
+        X_test = sequence.pad_sequences(X_test, maxlen=max_words_in_sentence)
+        model.fit(X_train, y_train, batch_size=batch_size, nb_epoch=nb_epoch,
               validation_data=(X_test, y_test),
               show_accuracy=True, )
+    else:
+        model.fit(X_train, y_train, batch_size=batch_size, nb_epoch=nb_epoch)
     if evaluate:
         score, acc = model.evaluate(X_test, y_test, batch_size=batch_size,
                                 show_accuracy=True)
