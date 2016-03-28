@@ -1,19 +1,19 @@
-# installation:
+# Installation:
 
-sudo  pip install sklearn
-
-
-sudo  pip install six
+    sudo  pip install sklearn
 
 
-sudo  pip install nltk
+    sudo  pip install six
 
 
-sudo  pip install wordsegment
+    sudo  pip install nltk
+
+
+    sudo  pip install wordsegment
  
 
 
-  # how to install keras: 
+  # How to install keras: 
     https://github.com/fchollet/keras
     
     
@@ -33,17 +33,18 @@ sudo  pip install wordsegment
     
 
 
-# run:
-THEANO_FLAGS=mode=FAST_RUN,device=gpuN,floatX=float32  python __main__.py 
+# Running:
+
+    THEANO_FLAGS=mode=FAST_RUN,device=gpuN,floatX=float32  python __main__.py 
  
  
-where gpuN should be replaced by a real device e.g. gpu0
+    where gpuN should be replaced by a real device e.g. gpu0
 
 
-or alternatively, run on cpu:
+    or alternatively, run on cpu:
 
 
-python __main__.py
+    python __main__.py
 
 # positive results:
 
@@ -67,6 +68,7 @@ average precision, recall, f1-score and support values for each class:
 
 
 # negative results:
+
 confusion matrix:
 
 
@@ -89,6 +91,6 @@ average precision, recall, f1-score and support values for each class:
 
 
 # future work:
-* comparison with the other models, e.g. tf-idf with svm might perform better, since the dataset is not that big
-* other deep architectures hyperparameter search
+* comparison with the other models, e.g. tf-idf with svm might perform better, since the data is not that big
+* other deep architectures and hyperparameter search
 * ensemble models
