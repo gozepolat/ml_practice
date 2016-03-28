@@ -92,7 +92,7 @@ if __name__ == "__main__":
     print(", ".join(pos_labels))
     print(avg_scores / 10.0)
 
-    #""" # Bonus: scores with pretrained weights, check this scores later, pretraining should make it better
+    """ # scores with pretrained weights, check this scores later, pretraining should make it better
     print("scores with pretrained weights:")
     # train the dataset on a cnn / lstm architecture
     pos_model = models.construct_cnn_lstm(nb_class=4, stateful=False, convolutional=True,
@@ -108,5 +108,5 @@ if __name__ == "__main__":
                                           pretrained_embedding=pre_model.layers[0])
     score, acc = models.train_model(neg_model, neg_X_train, neg_X_test, neg_y_train, neg_y_test, nb_epoch=3)
     print("negative model is trained with validation loss and accuracy", (score, acc))
-    #"""
+    """
 
