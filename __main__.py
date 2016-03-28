@@ -8,9 +8,6 @@ import cPickle
 from prep import dataset
 
 
-
-
-
 # nltk.download("punkt")
 # nltk.download("words")
 # nltk.download("stopwords")
@@ -73,7 +70,7 @@ if __name__ == "__main__":
     neg_X = np.concatenate((neg_X_train, neg_X_test))
     avg_scores = np.zeros((4, 5))
     benchmark.cross_validate(len(neg_labels), neg_X, neg_y_labels, 10, "neg", neg_labels, avg_scores,
-                             max_words=max_words_in_sentence)
+                             max_words=max_words_in_sentence, pretrained=pre_model.layers[0])
     print("end of cross-validation for negative task")
     print("average precision, recall, fscore and support values for each class:")
     print(", ".join(neg_labels))
@@ -89,7 +86,7 @@ if __name__ == "__main__":
     pos_X = np.concatenate((pos_X_train, pos_X_test))
     avg_scores = np.zeros((4, 4))
     benchmark.cross_validate(len(pos_labels), pos_X, pos_y_labels, 10, "pos", pos_labels, avg_scores,
-                             max_words=max_words_in_sentence)
+                             max_words=max_words_in_sentence, pretrained=pre_model.layers[0])
     print("end of cross-validation for positive task")
     print("average precision, recall, fscore and support values for each class:")
     print(", ".join(pos_labels))

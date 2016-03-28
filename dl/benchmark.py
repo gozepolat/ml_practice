@@ -4,16 +4,17 @@ from sklearn import preprocessing
 from sklearn.cross_validation import StratifiedKFold
 import cPickle
 import numpy as np
+import copy
 
 
 def cross_validate(nb_class, X, y, nb_epoch, task, labels, avg_scores, n_folds=10, evaluate=False, max_words=100,
-                   stateful=False, convolutional=True):
+                   stateful=False, convolutional=True, pretrained=None):
     skf = StratifiedKFold(y, n_folds=n_folds, shuffle=False, random_state=None)  # already shuffled
     for i, (train_ix, test_ix) in enumerate(skf):
         print ("Cross-validation fold: %d/%d" % (i + 1, n_folds))
         model = None  # Clearing the NN.
         model = models.construct_cnn_lstm(stateful=stateful, convolutional=convolutional, nb_class=nb_class,
-                                          max_words=max_words)
+                                          max_words=max_words, pretrained_embedding=copy.deepcopy(pretrained))
         # pretrained_embedding=pre_model.layers[0])
         X_train, X_test = X[train_ix], X[test_ix]
         y_train, y_test = y[train_ix], y[test_ix]
