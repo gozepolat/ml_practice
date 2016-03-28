@@ -5,7 +5,6 @@ from dl import models
 from dl import benchmark
 from sklearn import svm  # future work: fusion
 import cPickle
-
 from prep import dataset
 
 
