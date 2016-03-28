@@ -22,3 +22,6 @@ run:
 THEANO_FLAGS=mode=FAST_RUN,device=gpuN,floatX=float32  python __main__.py  # where gpuN should be replaced by a real device e.g. gpu0
 or alternatively, run on cpu:
 python __main__.py
+
+results:
+
