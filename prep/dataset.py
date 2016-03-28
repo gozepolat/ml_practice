@@ -129,7 +129,7 @@ def generate_pos_neg_set(neg_X_train, neg_y_train, pos_X_train, pos_y_train):
 
 
 def dump_all():
-    """ preprocess the datasets and dump all the processed data ready for pretraining and training
+    """ preprocess the datasets and pickle dump all the processed data ready for pretraining and training
     pre_y, pre_X, pos_X_train, pos_X_test, pos_y_train, pos_y_test, neg_X_train, neg_X_test, neg_y_train, neg_y_test
     """
     if os.path.isfile("data/pos.pkl") and os.path.isfile("data/pos.pkl"):
@@ -213,13 +213,13 @@ def dump_all():
                                                                            word_int_map["other"]], test_size=0.2)
     # WARNING! class order of "Other" always must be the last
     # split into X (features = int) and y (class labels = int) and convert y into one hot encoding, for neg data
+    print(word_int_map[159])
     neg_X_train, neg_X_test, neg_y_train, neg_y_test = util.reshape_train(neg,
-                                                                          [word_int_map["sadness"],
+                                                                          [word_int_map["sad"],
                                                                            word_int_map["anger"],
                                                                            word_int_map["disgust"],
                                                                            word_int_map["hate"],
                                                                            word_int_map["other"]], test_size=0.2)
-
     if not os.path.isfile("data/pre_data.pkl"):
         # append everything for pretraining
         p_data = pos_X_train + pos_X_test + neg_X_train + neg_X_test
@@ -237,3 +237,4 @@ def dump_all():
                   neg_X_test, neg_y_train, neg_y_test, max_words_in_sentence)
     print("dumping everything to data/all.pkl..")
     cPickle.dump(everything, open("data/all.pkl", "w"))
+    return everything

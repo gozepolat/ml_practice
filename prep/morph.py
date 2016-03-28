@@ -124,7 +124,7 @@ def prep_tweet(tweet, segment=False):
     tweet = re.sub(r"[-+]?[.\d]*[\d]+[:,.\d]*", " number ", tweet, flags)
     tweet = re.sub(r"\*([^\*]+)\*", r"\1", tweet, flags)
     tweet = re.sub(r"#", " #", tweet, flags)
-    tweet = re.sub(r"(([^a-z]+ [^a-z]+ )+)", r"\1 shout ", tweet, flags)
+    tweet = re.sub(r"(([^a-z]+ [^a-z]+ [^a-z]+ )+)", r"\1 shout ", tweet, flags)
     tweet = re.sub(r"([!?.]){2,}", r"\1 repeat ", tweet, flags)
     tweet = re.sub(r"([aoe]*h[aoe]+){2,}", " laugh ", tweet, flags | re.IGNORECASE)
     tweet = re.sub(r"<+-+", " from ", tweet, flags)
@@ -133,7 +133,9 @@ def prep_tweet(tweet, segment=False):
     tweet = re.sub(r"zz[z]+", " sleep ", tweet, flags)
     if segment:
         tweet = re.sub(r"#\S+", segment_hashtag, tweet, flags)
-    tweet = re.sub(r"([^^])-([^^])]", " ", tweet, flags)
+    tweet = re.sub(r"^-^", " smile ", tweet, flags)
+    tweet = re.sub(r"-.-", " frown ", tweet, flags)
+    tweet = re.sub(r"-", " ", tweet, flags)
     tweet = re.sub(r"'", " ' ", tweet, flags)
     return tweet
 
