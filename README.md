@@ -46,7 +46,7 @@
 
     python __main__.py
 
-# positive results:
+# Positive results:
 
 confusion matrix:
 
@@ -67,7 +67,7 @@ average precision, recall, f1-score and support values for each class:
     support:    299.9       274.5       259.5       266.
 
 
-# negative results:
+# Negative results:
 
 confusion matrix:
 
@@ -90,7 +90,7 @@ average precision, recall, f1-score and support values for each class:
     support:   139.         120.3       116.1       86.6        137.9      
 
 
-# future work:
+# Future work:
 * comparison with the other models, e.g. tf-idf with svm might perform better, since the data is not that big
 * other deep architectures and hyperparameter search
 * ensemble models
