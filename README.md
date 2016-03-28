@@ -59,10 +59,12 @@ confusion matrix:
 average precision, recall, f1-score and support values for each class:
 
 
-Joy   Desire  Love Other
+                Joy         Desire      Love        Other
+    precision:  0.63089167  0.74927101  0.72471765  0.64202944
+    recall:     0.69155184  0.77551958  0.66441788  0.57894737
+    f1-score:   0.65639208  0.759734    0.69080176  0.60143182
+    support:    299.9       274.5       259.5       266.
 
-
-..
 
 # negative results:
 confusion matrix:
@@ -86,3 +88,7 @@ average precision, recall, f1-score and support values for each class:
     support:   139.         120.3       116.1       86.6        137.9      
 
 
+# future work:
+* comparison with the other models, e.g. tf-idf with svm might perform better, since the dataset is not that big
+* other deep architectures hyperparameter search
+* ensemble models
