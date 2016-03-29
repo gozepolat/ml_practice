@@ -79,6 +79,10 @@ average precision, recall, f1-score and support values for each class:
     f1-score:  0.61538925   0.49156961  0.48857583  0.41760351  0.66797395   
     support:   139.         120.3       116.1       86.6        137.9      
 
+# Prediction results
+Prediction results for the test files can be achieved by running 
+    THEANO_FLAGS=mode=FAST_RUN,device=gpuN,floatX=float32  python predict.py
+(The results are saved into data/pos_emotions_pred.csv and data/neg_emotions_pred.csv)
 
 # Future work:
 * comparison with the other models, e.g. tf-idf with svm might perform better, since the data is not that big
