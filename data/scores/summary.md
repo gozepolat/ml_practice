@@ -1,41 +1,3 @@
-# Installation:
-
-    sudo  pip install sklearn
-
-    sudo  pip install six
-
-    sudo  pip install nltk
-
-    sudo  pip install wordsegment
- 
-
-
-  # How to install keras: 
-    https://github.com/fchollet/keras
-    
-    
-    Dependencies: numpy, scipy, pyyaml, HDF5 and h5py    
-    
-    Optional but recommended: cuDNN    
-    
-    # install theano:    
-    
-    sudo pip install git+git://github.com/Theano/Theano.git        
-        
-    sudo  pip install keras
-    
-
-
-# Running:
-
-    THEANO_FLAGS=mode=FAST_RUN,device=gpuN,floatX=float32  python main.py  
- 
-    where gpuN should be replaced by a real device e.g. gpu0
-
-    or alternatively, run on cpu:
-
-    python main.py
-
 # Positive results:
 
 confusion matrix:
@@ -77,10 +39,4 @@ average precision, recall, f1-score and support values for each class:
     precision: 0.60313347   0.51409138  0.45666408  0.49632042  0.7127853
     recall:    0.6352518    0.47709366  0.53902151  0.39949211  0.63587221 
     f1-score:  0.61538925   0.49156961  0.48857583  0.41760351  0.66797395   
-    support:   139.         120.3       116.1       86.6        137.9      
-
-
-# Future work:
-* comparison with the other models, e.g. tf-idf with svm might perform better, since the data is not that big
-* other deep architectures and hyperparameter search
-* ensemble models
+    support:   139.         120.3       116.1       86.6        137.9  
