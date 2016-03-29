@@ -81,7 +81,11 @@ average precision, recall, f1-score and support values for each class:
 
 # Prediction results
 Prediction results for the test files can be achieved by running 
+
+
     THEANO_FLAGS=mode=FAST_RUN,device=gpuN,floatX=float32  python predict.py
+
+
 (The results are saved into data/pos_emotions_pred.csv and data/neg_emotions_pred.csv)
 
 # Future work:
