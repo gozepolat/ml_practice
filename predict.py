@@ -3,13 +3,13 @@ import os
 # from prep import dataset
 import cPickle
 import io
-# from prep import morph
+from prep import morph
 import numpy as np
 
 if __name__ == '__main__':
     if not os.path.isfile("data/all.pkl"):
-        #(pre_y, pre_X, pos_neg_y, pos_neg_X, pos_X_train, pos_X_test, pos_y_train, pos_y_test, neg_X_train, neg_X_test,
-        #neg_y_train, neg_y_test, max_words_in_sentence) = dataset.dump_all()
+        (pre_y, pre_X, pos_neg_y, pos_neg_X, pos_X_train, pos_X_test, pos_y_train, pos_y_test, neg_X_train, neg_X_test,
+        neg_y_train, neg_y_test, max_words_in_sentence) = dataset.dump_all()
         pass
     else:
         print("loading preprocessed data..")
@@ -51,7 +51,7 @@ if __name__ == '__main__':
     pos_pred = pos_model.predict_classes(pos_test)
     pos_labels = [u"Joy", u"Desire", u"Love", u"Other"]
     pred_labels = [pos_labels[i] for i in pos_pred]
-    # morph.fix_csv("data/pos_emotions_test.csv", 0)
+    morph.fix_csv("data/pos_emotions_test.csv", 0)
     pos_model.save_weights("data/pos_model.hdf5",overwrite=True)
     with io.open("data/pos_emotions_test_fixed.csv", "r", encoding="utf-8-sig") as test, io.open(
             "data/pos_emotions_pred.csv", "w", encoding="utf-8-sig") as pred:
@@ -70,7 +70,7 @@ if __name__ == '__main__':
     neg_pred = neg_model.predict_classes(neg_test)
     neg_labels = [u"Sadness", u"Anger", u"Disgust", u"Hate", u"Other"]
     pred_labels = [neg_labels[i] for i in neg_pred]
-    # morph.fix_csv("data/neg_emotions_test.csv", 0)
+    morph.fix_csv("data/neg_emotions_test.csv", 0)
     neg_model.save_weights("data/neg_model.hdf5", overwrite=True)
     with io.open("data/neg_emotions_test_fixed.csv", "r", encoding="utf-8-sig") as test, io.open(
             "data/neg_emotions_pred.csv", "w", encoding="utf-8-sig") as pred:
