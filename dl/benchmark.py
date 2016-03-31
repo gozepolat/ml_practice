@@ -7,9 +7,10 @@ import numpy as np
 import copy
 
 
-def cross_validate(nb_class, X, y, nb_epoch, task, labels, avg_scores, cm_history, n_folds=10, evaluate=False, max_words=100,
+def cross_validate(nb_class, X, y, nb_epoch, task, labels, avg_scores, cm_history,n_folds=10, evaluate=False, max_words=100,
                    stateful=False, convolutional=True, pretrained=None):
     skf = StratifiedKFold(y, n_folds=n_folds, shuffle=False, random_state=None)  # already shuffled
+    all_pred_y,all_y=[],[]
     for i, (train_ix, test_ix) in enumerate(skf):
         print ("Cross-validation fold: %d/%d" % (i + 1, n_folds))
         model = None  # Clearing the NN.
@@ -25,6 +26,8 @@ def cross_validate(nb_class, X, y, nb_epoch, task, labels, avg_scores, cm_histor
             X_test = models.pad(X_test, max_words=max_words)
         y_test_pred = model.predict_classes(X_test)
         y_test_pred = [labels[i] for i in y_test_pred]
+        all_pred_y.extend(y_test_pred)
+        all_y.extend(y_test)
         cm = confusion_matrix(y_test, y_test_pred, labels=labels)
         print(", ".join(labels))
         print("confusion matrix:")
@@ -41,6 +44,18 @@ def cross_validate(nb_class, X, y, nb_epoch, task, labels, avg_scores, cm_histor
         print(", ".join(labels))
         cPickle.dump(cm, open("data/scores/%s_cm_cross_%d.pkl" % (task, i), "w"))
         cPickle.dump(cm, open("data/scores/%s_precision_recall_fscore_support_pos_cross_%d.pkl" % (task, i), "w"))
+    # print overall results
+    print("overall confusion matrix:")
+    print(", ".join(labels))
+    cm = confusion_matrix(all_y, all_pred_y, labels=labels)
+    print(cm)
+    print("overall scores")
+    scores=precision_recall_fscore_support(all_y, all_pred_y, average=None, labels=labels)
+    print("overall precision, recall, fscore and support values for each class:")
+    print(", ".join(labels))
+    for x, label in enumerate(["precision", "recall", "fscore", "support"]):
+        print(label, scores[x])
+
 
 
 def remap(arr, labels):

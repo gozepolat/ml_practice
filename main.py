@@ -68,6 +68,7 @@ if __name__ == "__main__":
     neg_X = np.concatenate((neg_X_train, neg_X_test))
     avg_scores = np.zeros((4, 5))
     cm_history = []
+
     benchmark.cross_validate(len(neg_labels), neg_X, neg_y_labels, 10, "neg", neg_labels, avg_scores, cm_history,
                              max_words=max_words_in_sentence, pretrained=pre_model.layers[0])
     print("end of cross-validation for negative task")
