@@ -188,8 +188,12 @@ def dump_all():
         pos_test = int_corpus[0:file_ix[1]]
         neg_test = int_corpus[file_ix[1]:file_ix[2]]
         # balance the "Other" class and increase the size of the neg/pos training datasets by ~1000 ;)
-        pos, neg = exchange_data(int_corpus[file_ix[2]:file_ix[3]], int_corpus[file_ix[3]:],
-                                 word_int_map["other"])
+        # pos,neg=exchange_data(int_corpus[file_ix[2]:file_ix[3]], int_corpus[file_ix[3]:],word_int_map["other"])
+        # do not balance the "Other" category
+        pos, neg = int_corpus[file_ix[2]:file_ix[3]], int_corpus[file_ix[3]:]
+        np.random.shuffle(pos)  # would normally do this in exchange data
+        np.random.shuffle(neg)  # would normally do this in exchange data
+
         cPickle.dump(pos, open("data/pos.pkl", "w"))
         cPickle.dump(neg, open("data/neg.pkl", "w"))
         cPickle.dump(word_int_map, open("data/word_int_map.pkl", "w"))

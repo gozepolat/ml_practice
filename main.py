@@ -7,7 +7,6 @@ from sklearn import svm  # future work: fusion
 import cPickle
 from prep import dataset
 
-
 # nltk.download("punkt")
 # nltk.download("words")
 # nltk.download("stopwords")
@@ -57,7 +56,6 @@ if __name__ == "__main__":
 
     print("finished loading the pretrained embedding layer weights")
 
-
     # scores without pretrained weights
     # stratified cross-validation 10-fold as default, give n_fold=k to benchmark.cross_validate to change it
     evaluate = False  # do not calculate validation score in keras since it will be done extensively later
@@ -69,9 +67,16 @@ if __name__ == "__main__":
     neg_y_labels = benchmark.remap(np.concatenate((neg_y_train, neg_y_test)), neg_labels)
     neg_X = np.concatenate((neg_X_train, neg_X_test))
     avg_scores = np.zeros((4, 5))
-    benchmark.cross_validate(len(neg_labels), neg_X, neg_y_labels, 10, "neg", neg_labels, avg_scores,
+    cm_history = []
+    benchmark.cross_validate(len(neg_labels), neg_X, neg_y_labels, 10, "neg", neg_labels, avg_scores, cm_history,
                              max_words=max_words_in_sentence, pretrained=pre_model.layers[0])
     print("end of cross-validation for negative task")
+    avg_cm = cm_history[0]
+    for cm in cm_history[1:]:
+        avg_cm += cm
+    avg_cm /= 10
+    print("average confusion matrix")
+    print(avg_cm)
     print("average precision, recall, fscore and support values for each class:")
     print(", ".join(neg_labels))
     print(avg_scores / 10.0)
@@ -85,9 +90,16 @@ if __name__ == "__main__":
     pos_y_labels = benchmark.remap(np.concatenate((pos_y_train, pos_y_test)), pos_labels)
     pos_X = np.concatenate((pos_X_train, pos_X_test))
     avg_scores = np.zeros((4, 4))
-    benchmark.cross_validate(len(pos_labels), pos_X, pos_y_labels, 10, "pos", pos_labels, avg_scores,
+    cm_history = []
+    benchmark.cross_validate(len(pos_labels), pos_X, pos_y_labels, 10, "pos", pos_labels, avg_scores, cm_history,
                              max_words=max_words_in_sentence, pretrained=pre_model.layers[0])
     print("end of cross-validation for positive task")
+    avg_cm = cm_history[0]
+    for cm in cm_history[1:]:
+        avg_cm += cm
+    avg_cm /= 10
+    print("average confusion matrix")
+    print(avg_cm)
     print("average precision, recall, fscore and support values for each class:")
     print(", ".join(pos_labels))
     print(avg_scores / 10.0)
@@ -109,4 +121,3 @@ if __name__ == "__main__":
     score, acc = models.train_model(neg_model, neg_X_train, neg_X_test, neg_y_train, neg_y_test, nb_epoch=3)
     print("negative model is trained with validation loss and accuracy", (score, acc))
     """
-

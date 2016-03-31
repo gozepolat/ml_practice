@@ -46,6 +46,7 @@ if __name__ == '__main__':
     score, acc = models.train_model(pos_model, pos_X_train,  pos_y_train, pos_X_test, pos_y_test, nb_epoch=40,
                                     max_words=max_words_in_sentence)
     # predict:
+    os.path.
     pos_test = cPickle.load(open("data/pos_test.pkl"))
     pos_test = models.pad(pos_test, max_words=max_words_in_sentence)
     pos_pred = pos_model.predict_classes(pos_test)
