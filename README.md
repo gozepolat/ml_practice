@@ -96,6 +96,11 @@ confusion matrices for each fold:
 
 Overall confusion matrix:
 
+    Joy     Desire  Love    Other
+    2121    161     351     366
+    235     2078    153     279
+    520     169     1731    175
+    433     234     138     855
 Averaged confusion matrix:
 
     Joy     Desire  Love    Other
@@ -105,6 +110,12 @@ Averaged confusion matrix:
     40      23      16      85
 Overall precision, recall, f1-score and support values for each class:
 
+                Joy         Desire      Love        Other
+    precision:  0.64097915  0.78652536  0.72945638  0.51044776
+    recall:     0.70723575  0.75701275  0.66705202  0.51506024
+    recall:     0.70453289  0.77482814  0.70674042  0.51566265
+    f1-score:   0.67247939  0.77148691  0.6968599   0.51274363
+    support:    2999        2745        2595        1660
 Average precision, recall, f1-score and support values for each class:
 
                 Joy         Desire      Love        Other
