@@ -75,6 +75,8 @@ if __name__ == "__main__":
     for cm in cm_history[1:]:
         avg_cm += cm
     avg_cm /= 10
+    print("total confusion matrix")
+    print(avg_cm)
     print("average confusion matrix")
     print(avg_cm)
     print("average precision, recall, fscore and support values for each class:")
@@ -97,6 +99,8 @@ if __name__ == "__main__":
     avg_cm = cm_history[0]
     for cm in cm_history[1:]:
         avg_cm += cm
+    print("total confusion matrix")
+    print(avg_cm)
     avg_cm /= 10
     print("average confusion matrix")
     print(avg_cm)

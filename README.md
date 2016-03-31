@@ -38,7 +38,7 @@
 
 # Positive results:
 
-confusion matrix:
+confusion matrices:
 
 
     Joy   Desire  Love Other
@@ -61,15 +61,31 @@ average precision, recall, f1-score and support values for each class:
 
 confusion matrix:
 
+    Sadness Anger   Disgust     Hate    Other
+    82      27      17          8       5
+    14      61      23          17      6
+    10      23      62          18      4
+    4       21      18          36      8
+    7       8       6           5       12
 
     Sadness Anger   Disgust     Hate    Other
-    90      26      12          2       9
-    21      66      17          13      3
-    12      19      65          14      6
-    11      17      18          30      10
-    22      6       18          6       86
-
-
+    104     16      11          5       3
+    16      63      15          25      2
+    15      13      57          27      4
+    11      12      13          49      2
+    5       5       7           7       14   
+    Sadness Anger   Disgust     Hate    Other
+    94      22      19          2       2
+    20      65      29          7       0
+    11      20      77          6       2
+    3       13      41          28      2
+    9       4       20          0       5
+    Sadness Anger   Disgust     Hate    Other    
+    90      30      8           4       7
+    18 84  9  5  4
+ 16 30 49 16  5
+ 7 17 30 30  3
+ 6  6  9  2 15
 average precision, recall, f1-score and support values for each class:
 
 
