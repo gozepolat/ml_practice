@@ -52,7 +52,7 @@ if __name__ == "__main__":
         # print("(this model can be directly used for positive vs negative sentiment classification)")
     else:
         print("loading the pretrained embedding layer weights")
-        pre_model.load_weights("data/pos_neg_model.hdf5")  # TODO uncomment
+        pre_model.load_weights("data/pos_neg_model.hdf5")
 
     print("finished loading the pretrained embedding layer weights")
 
