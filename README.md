@@ -36,6 +36,7 @@
 
     python main.py
 
+
 # Positive results:
 
 confusion matrices for each fold:
@@ -81,24 +82,30 @@ confusion matrices for each fold:
     49      11      183     16
     48      16      19      83
     Joy     Desire  Love    Other
-    218  13  34  35]
-    22 222  12  18]
-    37  22 187  13]
-    29  33  17  87]
+    218     13      34      35
+    22      222     12      18
+    37      22      187     13
+    29      33      17      87
     Joy     Desire  Love    Other
     179     16      57      47
     10      206     22      36
     31      20      190     18
     28      16      23      99
- 
-average confusion matrix:
+
+# Overall positive results from all folds combined:
+
+Overall confusion matrix:
+
+Averaged confusion matrix:
 
     Joy     Desire  Love    Other
     211     18      40      29
     21      212     19      20
     44      17      183     13
     40      23      16      85
-average precision, recall, f1-score and support values for each class:
+Overall precision, recall, f1-score and support values for each class:
+
+Average precision, recall, f1-score and support values for each class:
 
                 Joy         Desire      Love        Other
     precision:  0.66884396  0.7845121   0.70861263  0.58631526
@@ -180,7 +187,17 @@ confusion matrices from each fold:
     2       45      56          13      0
     5       20      17          42      2
     3       11      14          3       6
+# Overall negative results from all folds combined:
 
+Overall confusion matrix:
+
+    Sadness Anger   Disgust     Hate    Other
+    1028    115     155         52      40
+    282     567     198         110     46
+    168     177     628         129     59
+    88      142     228         366     42
+    102     51      102         29      95
+ 
 Averaged confusion matrix:
 
     Sadness Anger   Disgust     Hate    Other
@@ -190,7 +207,15 @@ Averaged confusion matrix:
     6       16      22          38      2
     6       5       11          3       11
 
-average precision, recall, f1-score and support values for each class:
+Overall precision, recall, f1-score and support values for each class:
+
+                Sadness     Anger       Disgust     Hate        Other
+    precision:  0.61630695  0.53897338  0.47902365  0.5335277   0.33687943
+    recall:     0.73956835  0.4713217   0.54091301  0.42263279  0.25065963
+    f1-score:   0.67233486  0.50288248  0.50809061  0.47164948  0.28744327
+    support:    1390        1203        1161        866         379
+
+Averaged precision, recall, f1-score and support values for each class:
 
                 Sadness     Anger       Disgust     Hate        Other
     precision:  0.69155112  0.506961      0.495342      0.53947037    0.43788473
@@ -206,6 +231,8 @@ It is interesting to see that "other" category was improved but sadness, anger, 
     recall:    0.6352518    0.47709366  0.53902151  0.39949211  0.63587221 
     f1-score:  0.61538925   0.49156961  0.48857583  0.41760351  0.66797395   
     support:   139.         120.3       116.1       86.6        137.9      
+
+
 
 # Prediction results
 Prediction results for the test files can be achieved by running 
