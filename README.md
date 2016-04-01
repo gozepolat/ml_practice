@@ -124,7 +124,7 @@ Average precision, recall, f1-score and support values for each class:
     f1-score:   0.68305063  0.77830682  0.70651473  0.54180708
     support:    299.9       274.5       259.5       166.     
 
-Below are the results when ~1000 negative emotion samples (sadness, anger, disgust, hate) were added to the "other" category of negative data for balancing,
+Below are the results when ~1000 negative emotion samples (sadness, anger, disgust, hate) were added to the "other" category of the positive data for balancing,
 It is interesting to see that "other" category was improved but some positive emotion labels were negatively affected:
 
                 Joy         Desire      Love        Other
