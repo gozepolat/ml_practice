@@ -101,13 +101,7 @@ Overall confusion matrix:
     235     2078    153     279
     520     169     1731    175
     433     234     138     855
-Averaged confusion matrix:
 
-    Joy     Desire  Love    Other
-    211     18      40      29
-    21      212     19      20
-    44      17      183     13
-    40      23      16      85
 Overall precision, recall, f1-score and support values for each class:
 
                 Joy         Desire      Love        Other
@@ -209,15 +203,6 @@ Overall confusion matrix:
     88      142     228         366     42
     102     51      102         29      95
  
-Averaged confusion matrix:
-
-    Sadness Anger   Disgust     Hate    Other
-    91      23      14          5       4
-    17      66      18          13      3
-    11      21      64          14      4
-    6       16      22          38      2
-    6       5       11          3       11
-
 Overall precision, recall, f1-score and support values for each class:
 
                 Sadness     Anger       Disgust     Hate        Other
