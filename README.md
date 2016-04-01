@@ -39,7 +39,7 @@
 
 # Positive results:
 
-confusion matrices for each fold:
+Confusion matrices for each fold:
 
     Joy     Desire  Love    Other
     204     28      46      22
@@ -136,7 +136,7 @@ It is interesting to see that "other" category was improved but some positive em
 
 # Negative results:
 
-confusion matrices from each fold:
+Confusion matrices from each fold:
 
     Sadness Anger   Disgust     Hate    Other
     82      27      17          8       5
@@ -255,6 +255,7 @@ Prediction results for the test files can be achieved by running
 (The results are saved into data/pos_emotions_pred.csv and data/neg_emotions_pred.csv)
 
 # Future work:
-* comparison with the other models, e.g. tf-idf with svm might perform better, since the data is not that big
-* other deep architectures and hyperparameter search
-* ensemble models
+* Playing with the vocabulary size
+* Comparison with other models, e.g. tf-idf with svm might perform better, since the data is not that big
+* Other deep architectures and hyperparameter search
+* Ensemble models
