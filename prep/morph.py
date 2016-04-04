@@ -130,7 +130,7 @@ def prep_tweet(tweet, segment=False):
     tweet = re.sub(r"<+-+", " from ", tweet, flags)
     tweet = re.sub(r"-+>+", " to ", tweet, flags)
     tweet = re.sub(r"([.,:;!?])", " \1 ", tweet, flags)
-    tweet = re.sub(r"zz[z]+", " sleep ", tweet, flags)
+    tweet = re.sub(r" zz[z]+ ", " sleep ", tweet, flags)
     if segment:
         tweet = re.sub(r"#\S+", segment_hashtag, tweet, flags)
     tweet = re.sub(r"^-^", " smile ", tweet, flags)
