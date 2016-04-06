@@ -45,12 +45,15 @@ Prediction results for the test files can be acquired by running
 
 (The results are saved into data/pos_emotions_pred.csv and data/neg_emotions_pred.csv)
 
-    # Overall and detailed results as the output of the code when run a single machine are available at:
+# Overall and detailed results as the output of the code when run a single machine are available at:
 
     scores/summary.md
     scores/all_results_on_a_single_machine.md
+# Current best scores are available at:
+
+    scores/current_best_scores.md
 
 # Future work:
-* comparison with the other models, e.g. tf-idf with svm might perform better, since the data is not that big
-* other deep architectures and hyperparameter search
-* ensemble models
+* Comparison with the other models, e.g. tf-idf with svm might perform better, since the data is not that big
+* Other deep architectures and hyperparameter search
+* Ensemble models

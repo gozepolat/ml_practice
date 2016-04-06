@@ -119,7 +119,7 @@ def word2int(word_freq, simplified_freq=None):
     word_map = Mapper()
     word_map["<unk>"] = 2  # unk
     for k, v in word_freq.items():
-        if v > 4:
+        if v > 2:
             word_map[k] = ix
             ix += 1
             if simplified_freq is not None:

@@ -5,6 +5,7 @@ from dl import models
 from dl import benchmark
 from sklearn import svm  # future work: fusion
 import cPickle
+
 from prep import dataset
 
 # nltk.download("punkt")
@@ -31,6 +32,8 @@ if __name__ == "__main__":
                                   nb_epoch=nb_epoch, batch_size=batch_size, evaluate=evaluate)
 
 
+    # word_int_map=cPickle.load(open("data/word_int_map.pkl"))
+    # print(len(word_int_map.left_to_right))
     # pretraining
     pre_model = models.construct_pre_model(max_words=max_words_in_sentence)
     print("constructed initial model")

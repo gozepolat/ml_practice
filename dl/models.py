@@ -6,10 +6,10 @@ def construct_pre_model(border_mode='valid', activation='relu',
                         optimizer='adam',
                         lstm_output_size=70, pool_length=2, nb_filter=64,
                         filter_length=3,
-                        embedding_size=128, max_words=100, max_features=20000):
+                        embedding_size=128, max_words=100, max_features=6000):
     model = models.Sequential()
     model.add(layers.Embedding(max_features, embedding_size, input_length=max_words))
-    model.add(layers.core.Dropout(0.25))
+    model.add(layers.core.Dropout(0.45))
     model.add(layers.convolutional.Convolution1D(nb_filter=nb_filter,
                                                  filter_length=filter_length,
                                                  border_mode=border_mode,
@@ -30,7 +30,7 @@ def construct_pre_model(border_mode='valid', activation='relu',
 def construct_cnn_lstm(stateful=False, convolutional=True, loss='categorical_crossentropy', border_mode='valid',
                        activation='relu', optimizer='rmsprop', nb_class=5, lstm_output_size=70, pool_length=2,
                        nb_filter=64, filter_length=3, pretrained_embedding=None, embedding_size=128, max_words=100,
-                       max_features=20000, dropouts=[0.35, 0.35, 0.15]):
+                       max_features=6000, dropouts=[0.45, 0.35, 0.15]):
     model = models.Sequential()
     if pretrained_embedding is None:
         model.add(layers.Embedding(max_features, embedding_size, input_length=max_words))

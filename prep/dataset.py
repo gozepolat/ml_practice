@@ -60,7 +60,7 @@ def generate_invalid_data(valid_data, lexicon, min_words, max_words):
         valid_data.append(generate_random_sequence(lexicon, min_words, max_words) + [0])
 
 
-def exchange_data(list1, list2, cmp_label, n1=1000, n2=1000):
+def exchange_data(list1, list2, cmp_label, n1=600, n2=600):
     """ fast exchange data
     :param list1:
     :param list2:
@@ -188,9 +188,9 @@ def dump_all():
         pos_test = int_corpus[0:file_ix[1]]
         neg_test = int_corpus[file_ix[1]:file_ix[2]]
         # balance the "Other" class and increase the size of the neg/pos training datasets by ~1000 ;)
-        # pos,neg=exchange_data(int_corpus[file_ix[2]:file_ix[3]], int_corpus[file_ix[3]:],word_int_map["other"])
+        pos,neg=exchange_data(int_corpus[file_ix[2]:file_ix[3]], int_corpus[file_ix[3]:],word_int_map["other"])
         # do not balance the "Other" category
-        pos, neg = int_corpus[file_ix[2]:file_ix[3]], int_corpus[file_ix[3]:]
+        # pos, neg = int_corpus[file_ix[2]:file_ix[3]], int_corpus[file_ix[3]:]
         np.random.shuffle(pos)  # would normally do this in exchange data
         np.random.shuffle(neg)  # would normally do this in exchange data
 
