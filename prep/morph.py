@@ -103,9 +103,8 @@ def fix(path, k, emoji):
         return fix_csv(emoji_path, k)
 
 
-def prep_tweet(tweet, segment=False):
+def prep_tweet(tweet, segment=False, ignore_numbers=True):
     """ modified from an existing code from: http://nlp.stanford.edu/projects/glove/preprocess-twitter.rb
-    :param tweet: a single word from the tweet
     :return: tagged/preprocessed version or the tweet itself
     """
     flags = re.VERBOSE | re.DOTALL | re.LOCALE
@@ -121,7 +120,8 @@ def prep_tweet(tweet, segment=False):
     tweet = re.sub(r"{}{}[\/|l*]".format(eyes, nose), " neutral ", tweet, flags)
     tweet = re.sub(r" x[xo]+", " kiss ", tweet, flags)
     tweet = re.sub(r"<3|♡ ", " heart ", tweet, flags)
-    tweet = re.sub(r"[-+]?[.\d]*[\d]+[:,.\d]*", " number ", tweet, flags)
+    if ignore_numbers:
+        tweet = re.sub(r"[-+]?[.\d]*[\d]+[:,.\d]*", " number ", tweet, flags)
     tweet = re.sub(r"\*([^\*]+)\*", r"\1", tweet, flags)
     tweet = re.sub(r"#", " #", tweet, flags)
     tweet = re.sub(r"(([^a-z]+ [^a-z]+ [^a-z]+ )+)", r"\1 shout ", tweet, flags)
@@ -140,7 +140,7 @@ def prep_tweet(tweet, segment=False):
     return tweet
 
 
-def tokenize(tweet, twt=TweetTokenizer(reduce_len=True), lower=True):
+def tokenize(tweet, twt=TweetTokenizer(reduce_len=True), lower=True, ignore_numbers=True):
     """convert given string into a list of tokenized words
 
     :param tweet: tweet string
@@ -148,7 +148,7 @@ def tokenize(tweet, twt=TweetTokenizer(reduce_len=True), lower=True):
     :return: list of tokenized words
     """
     # decoded = unicode(tweet)  # .decode("utf-8")
-    decoded = prep_tweet(tweet, segment=True)
+    decoded = prep_tweet(tweet, segment=True, ignore_numbers=ignore_numbers)
     if lower:
         tokenized = twt.tokenize(decoded.lower())
     else:

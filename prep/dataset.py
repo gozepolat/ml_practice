@@ -128,7 +128,51 @@ def generate_pos_neg_set(neg_X_train, neg_y_train, pos_X_train, pos_y_train):
     return pos_neg
 
 
-def dump_all():
+def dump_imdb():
+    if os.path.isfile("data/train_imdb.pkl") and os.path.isfile("data/test_imdb.pkl"):
+        print("directly loading the preprocessed data..")
+        word_int_map = cPickle.load(open("data/imdb_word_int_map.pkl", "r"))
+        train = cPickle.load(open("data/train_imdb.pkl", "r"))
+        test = cPickle.load(open("data/test_imdb.pkl", "r"))
+    else:
+        # tokenize, stem, and generate a corpus from the whole data
+        corpus = []
+        word_freq = {}
+        file_ix = [0]  # indicates w
+        ix = 0
+        print("tokenization and stemming phase..")
+        for path in ["data/train.tsv", "data/test.tsv"]:  # careful! do not change the order!
+            print(path)
+            n = util.create_corpus(path, corpus, lower=True, ignore_numbers=False)  # labels are numbers
+            print(n)
+            ix += n
+            file_ix.append(ix)
+        # generate a word frequency dictionary from the corpus
+        util.freq_corpus(corpus, word_freq)
+
+        # create a mapping between integers and words
+        word_int_map = util.word2int(word_freq)  # bidirectional map, unk words <=> 2, 0 & 1 are reserved
+        cPickle.dump(word_int_map, open("data/imdb_word_int_map.pkl", "w"))
+        # create an int corpus, by replacing the words with integers
+        int_corpus = util.word_corpus2int_corpus(corpus, word_int_map)
+        train = int_corpus[:file_ix[1]]
+        test = int_corpus[file_ix[1]:]
+
+    max_words_in_sentence = max(max([len(p) for p in test]), max([len(p) for p in train]))
+    X_tr, X_test, y_tr, y_test = util.reshape_train(train, [word_int_map["0"], word_int_map["1"],
+                                                             word_int_map["2"],
+                                                             word_int_map["3"], word_int_map["4"]], test_size=0.2)
+    p_data = X_tr + X_test
+    pre_data = generate_pretraining_data(word_int_map.right_to_left.keys(), p_data,
+                                             max_words_in_sentence)
+    pre_y, pre_X = util.vertical_split(pre_data, -1)
+    everything = (pre_y,pre_X, X_tr, X_test, y_tr, y_test, test, max_words_in_sentence)
+    print("dumping everything to data/imdb.pkl")
+    cPickle.dump(everything, open("data/imdb.pkl", "w"))
+    return everything
+
+
+def dump_twitter():
     """ preprocess the datasets and pickle dump all the processed data ready for pretraining and training
     pre_y, pre_X, pos_X_train, pos_X_test, pos_y_train, pos_y_test, neg_X_train, neg_X_test, neg_y_train, neg_y_test
     """
@@ -188,7 +232,7 @@ def dump_all():
         pos_test = int_corpus[0:file_ix[1]]
         neg_test = int_corpus[file_ix[1]:file_ix[2]]
         # balance the "Other" class and increase the size of the neg/pos training datasets by ~1000 ;)
-        pos,neg=exchange_data(int_corpus[file_ix[2]:file_ix[3]], int_corpus[file_ix[3]:],word_int_map["other"])
+        pos, neg = exchange_data(int_corpus[file_ix[2]:file_ix[3]], int_corpus[file_ix[3]:], word_int_map["other"])
         # do not balance the "Other" category
         # pos, neg = int_corpus[file_ix[2]:file_ix[3]], int_corpus[file_ix[3]:]
         np.random.shuffle(pos)  # would normally do this in exchange data

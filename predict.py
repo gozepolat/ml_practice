@@ -8,7 +8,7 @@ from prep import morph
 if __name__ == '__main__':
     if not os.path.isfile("data/all.pkl"):
         (pre_y, pre_X, pos_neg_y, pos_neg_X, pos_X_train, pos_X_test, pos_y_train, pos_y_test, neg_X_train, neg_X_test,
-        neg_y_train, neg_y_test, max_words_in_sentence) = dataset.dump_all()
+        neg_y_train, neg_y_test, max_words_in_sentence) = dataset.dump_twitter()
         pass
     else:
         print("loading preprocessed data..")

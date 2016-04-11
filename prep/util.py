@@ -56,15 +56,20 @@ def reshape_train(train, classes, test_size, random_state=27):
     return X_tr, X_test, y_tr, y_test
 
 
-def create_corpus(path, corpus=[], lower=True):
+def create_corpus(path, corpus=[], lower=True, ignore_numbers=True, no_header=False):
     nb_lines = 0
     stemmer = nltk.stem.PorterStemmer()
     with open(path, "r") as text:
+        skipped = no_header  # skip the first line
         for line in text:
-            stemmed = morph.stem(morph.tokenize(line.strip(), lower=lower), stemmer=stemmer)
-            # print(" ".join(stemmed))
-            corpus.append(stemmed)
-            nb_lines += 1
+            if skipped:
+                stemmed = morph.stem(morph.tokenize(line.strip(), lower=lower, ignore_numbers=ignore_numbers),
+                                     stemmer=stemmer)
+                # print(" ".join(stemmed))
+                corpus.append(stemmed)
+                nb_lines += 1
+            else:
+                skipped = True
     return nb_lines
 
 
@@ -119,7 +124,7 @@ def word2int(word_freq, simplified_freq=None):
     word_map = Mapper()
     word_map["<unk>"] = 2  # unk
     for k, v in word_freq.items():
-        if v > 2:
+        if v > 4:
             word_map[k] = ix
             ix += 1
             if simplified_freq is not None:
