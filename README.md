@@ -45,7 +45,7 @@ Prediction results for the test files can be acquired by running
 
 (The results are saved into data/pos_emotions_pred.csv and data/neg_emotions_pred.csv)
 
-# Overall and detailed results as the output of the code when run a single machine are available at:
+# Overall and detailed results as the output of the code when run on a single machine are available at:
 
     scores/summary.md
     scores/all_results_on_a_single_machine.md
