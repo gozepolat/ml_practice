@@ -2,7 +2,7 @@ import os
 from dl import models
 import cPickle
 
-# from prep import dataset
+from prep import dataset
 
 # nltk.download("punkt")
 # nltk.download("words")
@@ -12,15 +12,15 @@ import cPickle
 
 if __name__ == "__main__":
     if not os.path.isfile("data/imdb.pkl"):
-        #(pre_y, pre_X, X_tr, X_test, y_tr, y_test, test, max_words_in_sentence) = dataset.dump_imdb()
+        (pre_y, pre_X, X_tr, X_test, y_tr, y_test, test, max_words_in_sentence) = dataset.dump_imdb()
         pass
     else:
         print("loading preprocessed data..")
         (pre_y, pre_X, X_tr, X_test, y_tr, y_test, test, max_words_in_sentence) = cPickle.load(
             open("data/imdb.pkl", "r"))
     print("data is ready for training!")
-    #word_int_map = cPickle.load(open("data/imdb_word_int_map.pkl"))
-    nb_features = 18000  # len(word_int_map.left_to_right) + 3
+    word_int_map = cPickle.load(open("data/imdb_word_int_map.pkl"))
+    nb_features = len(word_int_map.left_to_right) + 3 # 18000  #
     print(nb_features)
     pre_model = models.construct_pre_model(max_words=max_words_in_sentence, max_features=nb_features)
     print("constructed initial model")

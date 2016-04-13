@@ -2,6 +2,7 @@ from keras import models, layers, callbacks
 from keras.preprocessing import sequence
 
 
+# TODO stride
 def construct_pre_model(border_mode='valid', activation='relu',
                         optimizer='adam',
                         lstm_output_size=70, pool_length=2, nb_filter=96,
@@ -22,8 +23,8 @@ def construct_pre_model(border_mode='valid', activation='relu',
     model.add(layers.core.Activation('sigmoid'))
 
     model.compile(loss='binary_crossentropy',
-                  optimizer=optimizer,class_mode='binary')#, metrics=["accuracy"])
-                  #class_mode='binary')
+                  optimizer=optimizer, class_mode='binary')  # , metrics=["accuracy"])
+    # class_mode='binary')
     return model
 
 
@@ -48,7 +49,7 @@ def construct_cnn_lstm(stateful=False, convolutional=True, loss='categorical_cro
         model.add(layers.core.Dropout(dropouts[1]))
     if stateful:  # TODO should give input shape if stateful
         model.add(layers.recurrent.LSTM(lstm_output_size, return_sequences=True, stateful=True))
-                                        #,batch_input_shape=(30, max_words, max_features)))
+        # ,batch_input_shape=(30, max_words, max_features)))
         model.add(layers.core.Dropout(dropouts[2]))
         model.add(layers.recurrent.LSTM(lstm_output_size, return_sequences=False, stateful=True))
     else:
@@ -58,7 +59,7 @@ def construct_cnn_lstm(stateful=False, convolutional=True, loss='categorical_cro
     model.add(layers.core.Activation('softmax'))
 
     model.compile(loss=loss,
-                  optimizer=optimizer)#, metrics=["accuracy"])
+                  optimizer=optimizer)  # , metrics=["accuracy"])
     return model
 
 
